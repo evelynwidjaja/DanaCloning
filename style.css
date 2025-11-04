@@ -1,0 +1,513 @@
+/* ======================= BACKGROUND ======================= */
+
+.bg-blue {
+  background-color: #108ee9 !important;
+}
+
+.bg-lightblue {
+    background-color: #18c1ff !important;
+}
+
+.bg-darkblue {
+  background-color: #084a7a !important;
+}
+
+/* ======================= FONT COLOR ======================= */
+
+.text-ligthblue {
+  color: #18c1ff !important;
+}
+
+.text-blue {
+  color: #108ee9 !important;
+}
+
+/* ======================= BUTTON ======================= */
+
+.btn-pink {
+  background-color: #ff64ae !important;
+}
+
+/* ======================= GENERAL ======================= */
+
+body {
+  background-color: #f5f5f5 !important;
+}
+
+
+/* ======================= HEADER ======================= */
+
+.nav-item {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 20px 30px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 220px;
+  z-index: 9999;
+  pointer-events: auto; 
+  margin-top: 5px;
+}
+
+header {
+  position: relative; 
+  z-index: 10;
+}
+
+.nav-item:hover .dropdown {
+  display: flex;
+  position: absolute;
+}
+
+main, section, .container, .hero, .content {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ======================= HERO ======================= */
+
+.video-background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+.video-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, 
+    #108ee9 0%,
+    rgba(0, 102, 204, 0.8) 10%, 
+    rgba(0, 102, 204, 0) 25%,   
+    rgba(0, 102, 204, 0) 70%, 
+    #108ee9 100%
+      );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 40%;
+}
+
+/* ======================= MAIN ======================= */
+
+.first-row{
+    padding-right: 10rem !important;
+}
+
+.first-row .first-img { 
+  margin-left: 100px;
+}
+
+/* ======================= DOMPETDIGITAL ======================= */
+
+
+.DompetDigitalBg {
+  position: relative;
+  height: 250px; 
+}
+
+.DompetDigital {
+  margin-top: 5rem;
+  background-color: #f5f5f5;
+}
+
+.DompetDigitalBg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("Assets/DompetDigitalBg.png") center/cover no-repeat;
+  filter: blur(1px) brightness(0.95);
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.DompetDigitalImg {
+  position: absolute; 
+  bottom: 0px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 80%;
+}
+
+.DompetDigital h3 {
+  font-family: Montserrat, sans-serif;
+  color: #118ee9;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.DompetDigital .Title{
+  font-family: Montserrat, sans-serif;
+  color: #313131;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+
+.DompetDigital p {
+  font-family: Montserrat, sans-serif;
+  color: #727272 !important;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.DompetDigital .btn {
+  border: 2px solid #118ee9 !important;
+  color: #118ee9;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* ======================= LAYANAN KEUANGAN ======================= */
+
+.LayananKeuangan {
+  margin-top: 7rem;
+}
+
+.LayananKeuangan h3 {
+  font-family: Montserrat, sans-serif;
+  color: #cfebff;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.LayananKeuangan .Title{
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+
+.LayananKeuangan p {
+  font-family: Montserrat, sans-serif;
+  color: #cfebff !important;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.LayananKeuangan .btn {
+  border: 2px solid #ffffff !important;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.LayananKeuanganBg {
+  position: relative;
+  height: 250px; 
+  left: 1.5rem;
+}
+
+
+.LayananKeuanganBg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("Assets/LayananKeuanganBg.png") center/cover no-repeat;
+  filter: blur(1px) brightness(0.95);
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.LayananKeuanganImg {
+  position: absolute; 
+  bottom: -2px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 90%;
+}
+
+.LayananKeuangan h1 {
+  font-size: 3.5rem !important;
+}
+
+
+/* ======================= GRID SCROLL ======================= */
+
+.scroll-container {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; 
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.custom-card {
+  flex: 0 0 calc(33.33% - 1rem); 
+  scroll-snap-align: start;
+  margin-right: 1.5rem;
+  
+}
+
+.scroll-wrapper {
+  position: relative;
+}
+
+.scroll-btn {
+  float: right;
+  background: #45ddd9;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-btn i {
+  font-size: 2rem;
+}
+
+.scroll-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+/* ======================= GAYA HIDUP ======================= */
+
+.GayaHidupBg {
+  position: relative;
+  height: 250px; 
+}
+
+.GayaHidup {
+  margin-top: 5rem;
+  background-color: #f5f5f5;
+}
+
+.GayaHidupBg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("Assets/DompetDigitalBg.png") center/cover no-repeat;
+  filter: blur(1px) brightness(0.95);
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.GayaHidupImg {
+  position: absolute; 
+  bottom: -3px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 80%;
+}
+
+.GayaHidup h3 {
+  font-family: Montserrat, sans-serif;
+  color: #118ee9;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.GayaHidup .Title{
+  font-family: Montserrat, sans-serif;
+  color: #313131;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+
+.GayaHidup p {
+  font-family: Montserrat, sans-serif;
+  color: #727272 !important;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.GayaHidup .btn {
+  border: 2px solid #118ee9 !important;
+  color: #118ee9;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* ======================= KEAMANAN ======================= */
+
+.KeamananBg {
+  position: relative;
+}
+
+.Keamanan {
+  padding-top: 5rem;
+}
+
+.KeamananImg {
+  position: absolute; 
+  left: 60%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 85%;
+  height: 280px !important;
+}
+
+.Keamanan h3 {
+  font-family: Montserrat, sans-serif;
+  color: #cfebff;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.Keamanan .Title{
+  font-family: Montserrat, sans-serif;
+  color: #ffffff !important;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+
+.Keamanan p {
+  font-family: Montserrat, sans-serif;
+  color: #cfebff !important;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.grid-button { 
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+/* ======================= TESTIMONI ======================= */
+
+.testimonial-section {
+  background: #f2f8ff;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.testimonial-text {
+  flex: 1;
+  height: 700px;
+  font-size: 1.1rem;
+  color: #222;
+  transition: opacity 0.5s ease;
+}
+
+.testimonial-photo img {
+  width: 600px;
+  height: 700px;
+  border-radius: 20px;
+  transition: opacity 0.5s ease;
+}
+
+.btn-nav {
+  background-color: #2ed8c3;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  float: right;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-nav:hover {
+  transform: scale(1.1);
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.quotation {
+  font-size: 120px;
+  font-weight: 700;
+  height: 80px;
+  width: 50px;
+  color: #bfbfbf;
+}
+
+/* ======================= FOOTER ======================= */
+
+.to-top-button {
+  float: right;
+  margin-top: -1.2rem;
+}
+
+.footer-border {
+  background-color: #fff;
+  height: 1px;
+  width: 95%;
+  margin: 48px 0;
+}

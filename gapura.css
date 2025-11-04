@@ -1,0 +1,391 @@
+/* ======================= BACKGROUND ======================= */
+
+.bg-blue {
+  background-color: #108ee9 !important;
+}
+
+.bg-lightblue {
+    background-color: #18c1ff !important;
+}
+
+.bg-darkblue {
+  background-color: #084a7a !important;
+}
+
+/* ======================= FONT COLOR ======================= */
+
+.text-ligthblue {
+  color: #18c1ff !important;
+}
+
+.text-blue {
+  color: #108ee9 !important;
+}
+
+/* ======================= BUTTON ======================= */
+
+.btn-pink {
+  background-color: #ff64ae !important;
+}
+
+/* ======================= GENERAL ======================= */
+
+body {
+  background-color: #f5f5f5 !important;
+}
+
+
+/* ======================= HEADER ======================= */
+
+.nav-item {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 20px 30px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 220px;
+  z-index: 9999;
+  pointer-events: auto; 
+  margin-top: 5px;
+}
+
+header {
+  position: relative; 
+  z-index: 10;
+  background-color: #0f479d !important;
+}
+
+.nav-item:hover .dropdown {
+  display: flex;
+  position: absolute;
+}
+
+main, section, .container, .hero, .content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ======================= HERO ======================= */
+
+.hero {
+  position: relative;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 948px;
+  height: 672px;
+  background-image: url(https://a.m.dana.id/resource/danaweb-v2/gapura/landing/hero-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 24px 0 0 24px;
+}
+
+.hero .wrapper {
+  position: relative;
+  width: 100%;
+  height: 672px;
+  max-width: 1080px;
+  z-index: 1;
+}
+
+.hero .container {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 620px;
+  padding: 20px 32px 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  border-radius: 24px;
+}
+
+.btn-gapura {
+  height: 60px;
+  padding: 13px 33px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 54px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: #fff !important;
+  border: none;
+}
+
+.sec-btn {
+  height: 60px;
+  padding: 20px 17px;
+  display: flex;
+  align-items: center;
+  border-radius: 59px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.2px;
+  text-align: center;
+  border: 1px solid #e3e3e3 !important;
+  color: #313131;
+  background-color: #fff !important;
+}
+
+/* ======================= MAIN ======================= */
+
+.btn-calc {
+  height: 44px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.4px;
+  background-color: #18c1ff;
+  border: none;
+  color: #fff;
+}
+
+.btn-docs {
+  height: 44px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.4px;
+  border: 2px solid #118ee9;
+  color: #118ee9;
+}
+
+/* ======================= PAYMENT ======================= */
+
+.payment .content {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+
+.content .tab-payment {
+  width: fit-content;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 40px;
+  border: 1px solid #e3e3e3;
+}
+
+.tab-payment .tab {
+  padding: 8px 16px;
+  border-radius: 80px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: .005em;
+  text-align: left;
+}
+
+.tab-payment .tab.active {
+  background-color: #ffcc3b;
+  color: #0f479d;
+}
+
+.content .info-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content .info-wrapper .info {
+  scroll-snap-align: start;
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+
+.content .info-wrapper .info .info-header .info-title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 37.8px;
+}
+
+
+.content .info-wrapper .info .info-header .info-desc {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23.8px;
+  color: #727272;
+}
+
+.content .info-wrapper .info .info-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.content .info-wrapper .info .info-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: fit-content;
+}
+
+.content .info-wrapper .info .info-tab-wrapper {
+  display: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 40px;
+  border: 1px solid #e3e3e3;
+}
+
+.content .info-wrapper .info .info-tab-wrapper .info-tab {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 80px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: .005em;
+  text-align: center;
+  background-color: #ffcc3b;
+  color: #0f479d;
+}
+
+/* ======================= FAQ ======================= */
+
+.faq {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.faq h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.faq-question {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 29.4px;
+  color: #313131;
+  width: 100%;
+  text-align: left;
+  padding: 15px 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question::after {
+  background-image: url(https://a.m.dana.id/resource/danaweb-v2/sub-menu-up-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 24px;
+  pointer-events: none;
+  width: 24px;
+  transition: transform .3s ease-in-out;
+}
+
+.faq-question.active::after {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23.8px;
+  color: #313131;
+}
+
+.faq-answer p {
+  padding: 0 0 15px;
+  color: #555;
+}
+
+.faq-answer.show {
+  max-height: 200px; 
+}
+
+
+/* ======================= FOOTER ======================= */
+
+.to-top-button {
+  float: right;
+  margin-top: -1.2rem;
+}
+
+.footer-border {
+  background-color: #fff;
+  height: 1px;
+  width: 95%;
+  margin: 48px 0;
+}
+
+.btn-sign {
+  height: 44px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.4px;
+  background-color: #18c1ff;
+  border: none;
+  color: #fff;
+}
