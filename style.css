@@ -28,6 +28,13 @@
   background-color: #ff64ae !important;
 }
 
+.btn-yellow:hover {
+  background-color: #ffcc3b !important;
+  border: 2px solid #ffcc3b !important;
+  color: black !important;
+  
+}
+
 /* ======================= GENERAL ======================= */
 
 body {
@@ -37,25 +44,35 @@ body {
 
 /* ======================= HEADER ======================= */
 
+nav {
+  position: relative;
+  top: 7px;
+}
+
 .nav-item {
   position: relative;
+  padding-bottom: 10px;        
+}
+
+.dropdown a:hover {
+  color: #cecece !important;
 }
 
 .dropdown {
-  position: absolute;
-  top: 100%; 
-  left: 0;
+  position: relative;
+  top: 75%; 
+  left: -70;
   background: white;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  padding: 20px 30px;
+  padding: 30px 100px 30px 20px;
   display: none;
   flex-direction: column;
   gap: 10px;
-  width: 220px;
+  width: 300px;
   z-index: 9999;
   pointer-events: auto; 
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 header {
@@ -73,6 +90,11 @@ main, section, .container, .hero, .content {
   z-index: 1;
 }
 
+.btn-language:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: inherit !important;
+}
 
 /* ======================= HERO ======================= */
 
@@ -186,7 +208,7 @@ main, section, .container, .hero, .content {
 }
 
 .DompetDigital .btn {
-  border: 2px solid #118ee9 !important;
+  border: 2px solid #118ee9;
   color: #118ee9;
   padding: 10px 20px;
   font-size: 18px;
@@ -197,7 +219,7 @@ main, section, .container, .hero, .content {
 /* ======================= LAYANAN KEUANGAN ======================= */
 
 .LayananKeuangan {
-  margin-top: 7rem;
+  margin-top: 12rem;
 }
 
 .LayananKeuangan h3 {
@@ -228,7 +250,7 @@ main, section, .container, .hero, .content {
 }
 
 .LayananKeuangan .btn {
-  border: 2px solid #ffffff !important;
+  border: 2px solid #ffffff ;
   color: #ffffff;
   padding: 10px 20px;
   font-size: 18px;
@@ -286,7 +308,8 @@ main, section, .container, .hero, .content {
   flex: 0 0 calc(33.33% - 1rem); 
   scroll-snap-align: start;
   margin-right: 1.5rem;
-  
+  height: 350px;
+  overflow: hidden;
 }
 
 .scroll-wrapper {
@@ -295,21 +318,25 @@ main, section, .container, .hero, .content {
 
 .scroll-btn {
   float: right;
-  background: #45ddd9;
   border: none;
-  color: white;
   font-size: 1.5rem;
   padding: 0.75rem 1rem;
   cursor: pointer;
   z-index: 10;
 }
 
-.scroll-btn i {
-  font-size: 2rem;
+.right {
+  background: #45ddd9;
+  color: white;
 }
 
-.scroll-btn:hover {
-  background: rgba(0,0,0,0.7);
+.left {
+  background: #e4e4e4;
+  color: rgb(128, 128, 128);
+}
+
+.scroll-btn i {
+  font-size: 2rem;
 }
 
 /* ======================= GAYA HIDUP ======================= */
@@ -371,7 +398,7 @@ main, section, .container, .hero, .content {
 }
 
 .GayaHidup .btn {
-  border: 2px solid #118ee9 !important;
+  border: 2px solid #118ee9;
   color: #118ee9;
   padding: 10px 20px;
   font-size: 18px;
@@ -431,6 +458,17 @@ main, section, .container, .hero, .content {
   gap: 0.5rem;
 }
 
+.keamanan-btn {
+  border: 2px solid #118ee9;
+  color: #118ee9;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: white;
+}
+
+
 /* ======================= TESTIMONI ======================= */
 
 .testimonial-section {
@@ -464,22 +502,16 @@ main, section, .container, .hero, .content {
 }
 
 .btn-nav {
-  background-color: #2ed8c3;
   border: none;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   float: right;
-  color: white;
   font-size: 1.2rem;
   margin-top: 30px;
   margin-right: 10px;
   cursor: pointer;
   transition: transform 0.2s;
-}
-
-.btn-nav:hover {
-  transform: scale(1.1);
 }
 
 .fade-out {
@@ -510,4 +542,8 @@ main, section, .container, .hero, .content {
   height: 1px;
   width: 95%;
   margin: 48px 0;
+}
+
+.main-footer li a:hover {
+  color: rgb(229, 229, 229) !important;
 }

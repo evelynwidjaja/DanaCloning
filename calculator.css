@@ -68,6 +68,12 @@
   background-color: #ff64ae !important;
 }
 
+.btn-yellow:hover {
+  background-color: #ffcc3b !important;
+  border: 2px solid #ffcc3b !important;
+  color: black !important;
+} 
+
 /* ======================= GENERAL ======================= */
 
 body {
@@ -77,25 +83,36 @@ body {
 
 /* ======================= HEADER ======================= */
 
+nav {
+  position: relative;
+  top: 7px;
+}
+
+.btn-daftar {
+  border: 2px solid #18c1ff !important;
+  color: black !important;
+} 
+
 .nav-item {
   position: relative;
+  padding-bottom: 10px;        
 }
 
 .dropdown {
-  position: absolute;
-  top: 100%; 
-  left: 0;
-  background: white;
+  position: relative;
+  top: 75%; 
+  left: -70;
+  background-color: #0f479d !important;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  padding: 20px 30px;
+  padding: 30px 100px 30px 20px;
   display: none;
   flex-direction: column;
   gap: 10px;
-  width: 220px;
+  width: 300px;
   z-index: 9999;
   pointer-events: auto; 
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 header {
@@ -112,6 +129,16 @@ header {
 main, section, .container, .hero, .content {
   position: relative;
   z-index: 1;
+}
+
+.dropdown a:hover {
+  color: #cecece !important;
+}
+
+.btn-language:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: inherit !important;
 }
 
 /* ======================= HERO ======================= */
@@ -132,7 +159,7 @@ main, section, .container, .hero, .content {
   display: block;
   width: 948px;
   height: 672px;
-  background-image: url(https://a.m.dana.id/resource/danaweb-v2/gapura/landing/hero-image.png);
+  background-image: url(Assets/Kalkulator/hero-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 24px 0 0 24px;
@@ -172,7 +199,7 @@ main, section, .container, .hero, .content {
   font-weight: 700;
   line-height: 25.2px;
   color: #fff !important;
-  border: none;
+  border: 2px solid #18c1ff !important;
 }
 
 .sec-btn {
@@ -185,11 +212,10 @@ main, section, .container, .hero, .content {
   font-weight: 700;
   line-height: 25.2px;
   text-align: center;
-  border: 1px solid #e3e3e3 !important;
+  border: 2px solid #e3e3e3 !important;
   color: #313131;
   background-color: #fff !important;
 }
-
 
 /* ======================= FAQ ======================= */
 
@@ -291,4 +317,8 @@ main, section, .container, .hero, .content {
   background-color: #18c1ff;
   border: none;
   color: #fff;
+}
+
+.main-footer li a:hover {
+  color: rgb(229, 229, 229) !important;
 }

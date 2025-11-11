@@ -1,0 +1,225 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="sticky-top d-flex justify-content-between fs-5 align-items-center p-3 text-white fw-bold" style="background-color: rgb(243, 61, 91) !important;">
+            <div class="d-flex align-items-center">
+                <div class="d-flex justify-content-center mt-1">
+                    <a href="index.html" class="ms-5"><img src="Assets/DanaLogo.png" class="img-fluid" style="width: 50%;" alt=""></a>
+                </div>
+                <nav>
+                    <ul class="d-flex list-unstyled gap-2 mb-0">
+                        <li class="nav-item position-relative">
+                            <a href="#" class="text-white text-decoration-none">Personal <span class="ms-2 text-white">|</span></a>
+                            <div class="dropdown">
+                                <h3 class="text-blue my-0 fw-bold">Personal <i class="bi bi-arrow-up-right ms-1"></i></h3>
+                                <hr class="my-0 fs-4" style="all: unset; height: 3px; background-color: #108ee9; width: 60%; border-radius: 2px;">
+                                <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Dompet Digital</a>
+                                <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Layanan Keuangan</a>
+                                <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Gaya Hidup</a>
+                            </div>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a href="#" class="text-white text-decoration-none">Bisnis <span class="ms-2 text-white">|</span></a>
+                            <div class="dropdown" style="width: 850px; left: -10rem;">
+                                <h3 class="text-blue my-0 fw-bold">Eksplor DANA untuk bisnis <i class="bi bi-arrow-up-right ms-1"></i></h3>
+                                <hr class="my-0 fs-4" style="all: unset; height: 3px; background-color: #108ee9; width: 47%; border-radius: 2px;">
+                                <div class="row">
+                                    <div class="col-4  mt-4">
+                                        <h4 class="fw-bold text-black">Payment Gateway</h4>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">About Gapura</a>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Fee Calculator</a>
+                                    </div>
+                                    <div class="col-4  mt-4">
+                                        <h4 class="fw-bold text-black">Solusi Pembayaran</h4>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Integrated Payment</a>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Point of Sales</a>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">DANA Business</a>
+                                    </div>
+                                    <div class="col-4  mt-4">
+                                        <h4 class="fw-bold text-black">Disbursement</h4>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">DANA Disbursement</a>
+                                    </div>
+                                    <div class="col-4  mt-5">
+                                        <h4 class="fw-bold text-black">Promosi</h4>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">DANA Deals</a>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Loyalty</a>
+                                    </div>
+                                    <div class="col-4  mt-5">
+                                        <h4 class="fw-bold text-black">Lainnya</h4>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Pricing Information</a>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Merchant Documents</a>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Contact Us</a><br>
+                                        <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">API Docs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a href="#" class="text-white text-decoration-none">Perusahaan</a>
+                            <div class="dropdown" style="width: 280px;">
+                                <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Tentang Kami</a>
+                                <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Karier</a>
+                                <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Newsroom</a>
+                                <a href="#" class="text-decoration-none text-secondary fw-normal mt-2">Blog</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="me-5">
+                <button type="button" class="btn btn-outline-light rounded-5 border-2 px-3 py-1">
+                    <img src="Assets/Indonesia.png" class="mb-1 img-fluid rounded-circle border border-1 border-white me-1" style="width: 15px; height: 15px;" alt="Indonesia">
+                    <span class="fw-bold">ID</span>
+                </button>
+                <button type="button" class="ms-2 me-3 btn bg-light text-danger rounded-5 px-3 py-1 fw-bold">
+                    Daftar GRATIS
+                </button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="d-flex justify-content-center align-items-center p-4 my-5 rounded-2" style="background-color: #ff64af9a;">
+                <div class="text-center">
+                    <h2 class="text-uppercase fw-bold">This page is just a template. It has not been developed yet</h2>
+                    <img src="Assets/template.png" alt="" class="img-fluid" style="width: 40%;"><br>
+                    <button class="btn rounded-2 mt-4" style="background-color: rgb(243, 61, 91);"><a href="index.html" class="text-decoration-none text-white fw-bold">Back to Main Page</a></button>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="px-4 pt-5 mt-5" style="background-color: rgb(243, 61, 91) !important;">
+            <div class="container px-5 mx-5">
+                <div class="footer-body">
+                    <div class="main-footer mt-5">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Solusi Pembayaran</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Payment Gateway</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">API Pembayaran</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Point of Sales</a></li>
+                                    <li style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Bisnis</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Disbursement</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Disbursement</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Enterprise Wallet</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Promosi</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Deals</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Loyalty</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Promosi</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Deals</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Loyalty</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-white footer-border mt-5"></div>
+                        <div class="row" style="margin-top: 5rem;">
+                            <div class="col-3">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Enterprise Resource</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Informasi Harga</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Merchant Resources</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Hubungi Kami</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Personal</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Dompet Digital</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Layanan Keuangan</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Gaya Hidup</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Perusahaan</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Tentang Kami</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Karir</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Newsroom</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Blog</a></li>                          
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Lainnya</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Games</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Promo</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Bantuan</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">FAQ</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Hubungi Kami</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Syarat & Ketentuan</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Kebijakan Privasi</a></li>                                
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-white footer-border mt-5"></div>
+                        <div class="row d-flex align-items-center justify-content-center g-0">
+                            <div class="col-3 mt-2">
+                                <pc class="fs-5 text-white">Download Aplikasi DANA</p>
+                            </div>
+                            <div class="col-2">
+                                <a href="https://play.google.com/store/apps/details?id=id.dana&hl=id" target="_blank"><img src="Assets/PlayStore.svg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://apps.apple.com/id/app/dana-dompet-digital-indonesia/id1437123008" target="_blank"><img src="Assets/AppStore.svg" class="img-fluid" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2 py-5 d-flex align-items-center justify-content-center g-0">
+                            <div class="col-6 mt-3">
+                                <p class="text-white fs-5" style="letter-spacing: 0.3px;">DANA Indonesia telah terdaftar dan diawasi oleh</p>
+                            </div>
+                            <div class="col-2">
+                                <img src="Assets/BILogo.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="Assets/KomdigiLogo.svg" class="img-fluid" style="width: 20%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="bg-darkblue px-4">
+            <div class="container px-5 mx-5">
+                <div class="footer-bottom pt-5">
+                    <div class="d-flex align-items-center justify-content-start gap-3 pb-3">
+                        <img src="Assets/DanaLogo.png" class="img-fluid" style="width: 12%;" alt="">
+                        <p class="text-white mt-3 ms-3">&copy; 2024 DANA - PT. Espay Debit Indonesia Koe. All Rights Reserved.</p>
+                        <div style="margin-left: 8rem;">
+                            <a href="https://www.facebook.com/danawallet/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/facebook-logo.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/dana.id/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/instagram-logo.svg" alt="Instagram"></a>
+                            <a href="https://twitter.com/danawallet" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/twitter-logo.svg" alt="Twitter"></a>
+                            <a href="https://www.youtube.com/channel/UC5SXW8337jcLG0Xp3lHbphw" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/youtube-logo.svg" alt="Youtube"></a>
+                            <a href="https://www.linkedin.com/company/dana-indonesia" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/linkedin-logo.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>        
+
+        <script src="calculator.js"></script>
+    </body>
+</html>
