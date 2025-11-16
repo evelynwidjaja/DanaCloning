@@ -1,0 +1,920 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="sticky-top d-flex justify-content-between fs-5 align-items-center p-3 bg-blue text-white fw-bold flex-wrap">
+            <div class="d-flex align-items-center">
+                <div class="d-flex justify-content-center mt-1">
+                    <a href="#" class="ms-3"><img src="../Assets/DanaLogo.png" class="img-fluid" style="width: 65%;" alt="DANA Logo"></a>
+                </div>
+                
+                <nav class="main-nav ms-4">
+                    <ul class="d-flex list-unstyled gap-3 mb-0 flex-lg-row flex-column">
+                        <li class="nav-item position-relative">
+                            <a href="#" class="text-white text-decoration-none">Personal <span class="ms-2 text-ligthblue d-none d-lg-inline">|</span></a>
+                            <div class="dropdown" style="left: -5rem;">
+                                <h3 class="text-blue my-0 fw-bold">Personal <i class="bi bi-arrow-up-right ms-1"></i></h3>
+                                <hr class="my-0 fs-4" style="all: unset; height: 3px; background-color: #108ee9; width: 60%; border-radius: 2px;">
+                                <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Digital Wallet</a>
+                                <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Financial Services</a>
+                                <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Lifestyle</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item position-relative">
+                            <a href="#" class="text-white text-decoration-none">Business <span class="ms-2 text-ligthblue d-none d-lg-inline">|</span></a>
+                            <div class="dropdown" style="width: 850px; left: -12rem;">
+                                <h3 class="text-blue my-0 fw-bold">Explore DANA for Business <i class="bi bi-arrow-up-right ms-1"></i></h3>
+                                <hr class="my-0 fs-4" style="all: unset; height: 3px; background-color: #108ee9; width: 47%; border-radius: 2px;">
+                                <div class="row">
+                                    <div class="col-4 mt-4">
+                                        <h4 class="fw-bold text-black">Payment Gateway</h4>
+                                        <a href="gapura-en.html" class="text-decoration-none text-secondary fw-normal mt-2">About Gapura</a><br>
+                                        <a href="calculator-en.html" class="text-decoration-none text-secondary fw-normal mt-2">Fee Calculator</a>
+                                    </div>
+                                    <div class="col-4 mt-4">
+                                        <h4 class="fw-bold text-black">Payment Solutions</h4>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Integrated Payment</a><br>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Point of Sales</a><br>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">DANA Business</a>
+                                    </div>
+                                    <div class="col-4 mt-4">
+                                        <h4 class="fw-bold text-black">Disbursement</h4>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">DANA Disbursement</a>
+                                    </div>
+                                    <div class="col-4 mt-4">
+                                        <h4 class="fw-bold text-black">Promotions</h4>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">DANA Deals</a><br>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Loyalty</a>
+                                    </div>
+                                    <div class="col-4 mt-4">
+                                        <h4 class="fw-bold text-black">Others</h4>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Pricing Info</a><br>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Merchant Documents</a><br>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Contact Us</a><br>
+                                        <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">API Documents</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item position-relative">
+                            <a href="#" class="text-white text-decoration-none">Corporate</a>
+                            <div class="dropdown" style="width: 280px; left: -3rem;">
+                                <a href="web-dana/about.html" class="text-decoration-none text-secondary fw-normal mt-2">About Us</a>
+                                <a href="web-dana/career.HTML" class="text-decoration-none text-secondary fw-normal mt-2">Careers</a>
+                                <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2">Newsroom</a>
+                                <a href="blog-dana/blog.html" class="text-decoration-none text-secondary fw-normal mt-2">Blog</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="hamburger d-lg-none" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="me-5 d-none d-lg-flex align-items-center">
+                <a href="index.html" class="text-decoration-none" style="all: unset;">
+                    <button type="button" class="btn btn-language btn-outline-light rounded-5 border-2 px-3 py-1">
+                        <span class="fw-bold">EN</span>
+                        <img src="../Assets/uk.svg" class="mb-1 img-fluid rounded-circle border border-1 border-white me-1" style="width: 15px; height: 15px;" alt="Indonesia">
+                    </button>
+                </a>
+                <button type="button" class="ms-2 me-3 btn btn-yellow bg-lightblue rounded-5 px-3 py-1 fw-bold text-white" id="openPopup" style="border: 2px #18c1ff solid;">
+                    Download DANA
+                </button>
+                <div class="modal fade" id="popupPage" tabindex="-1" aria-labelledby="popupPageLabel" aria-hidden="true" data-bs-backdrop="false">
+                    <div class="modal-dialog modal-dialog-centered modal-lg w-50">
+                        <div class="modal-content rounded-4 py-5">
+                            <h1 class="text-center">Download Now!</h1>
+                            <p class="text-secondary text-center mt-2">Start transacting with DANA #NotJustAWallet</p>
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/Barcode.png" class="img-fluid w-25" alt="QR Code">
+                            </div>
+                            <div class="download d-flex justify-content-center mt-4 gap-3">
+                                <a href="https://play.google.com/store/apps/details?id=id.dana&hl=id" target="_blank"><img src="../Assets/PlayStore.svg" class="img-fluid" alt="Play Store"></a>
+                                <a href="https://apps.apple.com/id/app/dana-dompet-digital-indonesia/id1437123008" target="_blank"><img src="../Assets/AppStore.svg" class="img-fluid" alt="App Store"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </header>
+
+        <div class="mobile-drawer Mobile" id="mobileDrawer">
+            <div class="drawer-header d-flex justify-content-between align-items-center px-3 py-3">
+                <img src="../Assets/Logo_dana_blue.svg.png" style="width: 20%;" alt="DANA Logo">
+                <i class="bi bi-x-lg fs-4 text-secondary closeDrawer" id="closeDrawer"></i>
+            </div>
+
+            <div class="drawer-tabs d-flex mt-3 gap-3 px-3 mb-3">
+                <span class="drawer-tab active" data-target="content-personal">Personal</span>
+                <span class="drawer-tab" data-target="content-business">Business</span>
+                <span class="drawer-tab" data-target="content-company">Corporate</span>
+            </div>
+
+            <div class="drawer-scroll-area">
+                <div class="drawer-content show" style="height: 320px;" id="content-personal">
+                    <div class="px-3">
+                        <h5 class="text-lightblue fw-bold">
+                            Personal <i class="bi bi-arrow-up-right"></i>
+                        </h5>
+                        <div class="blue-line" style="width: 20%;"></div>
+                    </div>
+                    <div class="accordion px-3">
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn">Digital Wallet</button>
+                            </a>
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn">Financial Services</button>
+                            </a>    
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn">Lifestyle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drawer-content" style="height: 320px;" id="content-business">
+                    <div class="px-3">
+                        <h5 class="text-lightblue fw-bold">
+                            Explore DANA for Business <i class="bi bi-arrow-up-right"></i>
+                        </h5>
+                        <div class="blue-line" style="width: 54%;"></div>
+                    </div>
+                    <div class="accordion px-3" id="bizAccordion">
+                        <div class="accordion-item">
+                            <button class="accordion-btn">Payment Gateway</button>
+                            <div class="accordion-content">
+                                <a href="gapura.html" class="acc-link">About Gapura</a>
+                                <a href="calculator.html" class="acc-link">Fee Calculator</a>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-btn">Payment Solutions</button>
+                            <div class="accordion-content">
+                                <a href="template.html" class="acc-link">Integrated Payment</a>
+                                <a href="template.html" class="acc-link">Point of Sales</a>
+                                <a href="template.html" class="acc-link">DANA Business</a>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-btn">Disbursement</button>
+                            <div class="accordion-content">
+                                <a href="template.html" class="acc-link">DANA Disbursement</a>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-btn">Promotions</button>
+                            <div class="accordion-content">
+                                <a href="template.html" class="acc-link">DANA Deals</a>
+                                <a href="template.html" class="acc-link">Loyalty</a>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-btn">Others</button>
+                            <div class="accordion-content">
+                                <a href="template.html" class="acc-link">Pricing Info</a>
+                                <a href="template.html" class="acc-link">Merchant Documents</a>
+                                <a href="template.html" class="acc-link">Contact Us</a>
+                                <a href="template.html" class="acc-link">API Documents</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drawer-content" style="height: 320px;" id="content-company">
+                    <div class="px-3">
+                        <h5 class="text-lightblue fw-bold">
+                            Corporate <i class="bi bi-arrow-up-right"></i>
+                        </h5>
+                        <div class="blue-line"></div>
+                    </div>
+                    <div class="accordion px-3">
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn">About Us</button>
+                            </a>
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn">Careers</button>
+                            </a>
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn">Newsroom</button>
+                            </a>
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn">Blog</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drawer-footer px-3 py-3 d-flex align-items-center">
+                <button class="btn btn-lang"><img src="../Assets/Indonesia.png" class="me-2 img-fluid rounded-circle" style="width: 25px; height: 30px;"><b>ID</b></button>
+                <button type="button" class="ms-2 me-3 btn btn-yellow bg-lightblue rounded-5 px-3 py-1 fw-bold text-white" id="openPopup" style="border: 2px #18c1ff solid;">
+                    DANA Enterprise Login
+                </button>
+            </div>
+        </div>
+
+        <section id="Hero" class="Hero">
+            <div class="video-background">
+                <video autoplay muted loop id="bg-video">
+                    <source src="../Assets/HomeHero.mp4" type="video/mp4">
+                </video>
+                <img src="../Assets/hero-mobile.png" alt="Hero Mobile" class="hero-image img-fluid">
+            </div>
+        </section>
+
+        <section class="Main bg-blue" id="Main">    
+            <div class="container px-5">
+                <div class="content d-flex align-items-center justify-content-center">
+                    <div>
+                        <img src="../Assets/HomeHero.svg" class="img-fluid test w-100" alt="">
+                        <h1 class="mt-5 fw-bold display-4 main-text">Start transacting with DANA #NotJustAWallet</h1>
+                    </div>
+                </div>
+                <div class="row first-row mt-5">
+                    <div class="col-7">
+                        <img src="../Assets/HomeMainPhone.png" class="first-img img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-5 mt-3">
+                        <div class="row ms-3 me-2 bg-white pe-5 ps-2 py-3 rounded-4 d-flex align-items-center">
+                            <div class="col-7 pe-0">
+                                <img src="../Assets/Barcode.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="col-5 pe-5 ps-0">
+                                <h4 class="fw-bold text-start text-blue download-text fw-normal">Download DANA Now!</h4>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-white" style="letter-spacing: 0.2px;">DANA Indonesia is registered and supervised by</p>
+                            <div class="row ms-5">
+                                <div class="col">
+                                    <img src="../Assets/BILogo.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="../Assets/KomdigiLogo.svg" class="img-fluid w-50" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-row">
+                    <div class="rounded-5 text-blue d-flex align-items-center justify-content-center mt-4" style="background-color: white; height: 50px;">
+                        <h3 class="text-center fw-bold">Download DANA</h3>
+                    </div>    
+                    <p class="text-white text-center mt-4" style="letter-spacing: 0.2px;">DANA Indonesia is registered and supervised by</p>
+                    <div class="row ms-5">
+                        <div class="col">
+                            <img src="../Assets/BILogo.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="../Assets/KomdigiLogo.svg" class="img-fluid w-50" alt="">
+                        </div>
+                    </div>
+                    <img src="../Assets/HomeMainPhone.png" class="ms-5 first-img img-fluid w-100 mt-4" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="DompetDigital" id="DompetDigital">
+            <div class="container px-5">
+                <div class="row DompetDigitalDesktop gap-5">
+                    <div class="col-5 DompetDigitalBg px-5 mt-5">
+                        <img src="../Assets/DompetDigital.png" class="img-fluid DompetDigitalImg" alt="">
+                    </div>
+                    <div class="col-6 ps-5">
+                        <h3>DIGITAL WALLET</h3>
+                        <h1 class="title">Like your wallet, but smarter</h1>
+                        <p>DANA Wallet makes it easier to access all your transaction needs and start investing.</p>
+                        <a href="digital-wallet.html" class="text-decoration-none">
+                            <button class="btn btn-yellow rounded-5 d-flex align-items-center" type="button">
+                                <div>Learn More</div>
+                                <i class="bi bi-arrow-right mt-1 ps-2"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="DompetDigitalMobile" style="margin-top: 11rem;">
+                    <div class="DompetDigitalBg px-5 mt-5" style="width: 100%; height: 65%;">
+                        <img src="../Assets/DompetDigital.png" class="img-fluid DompetDigitalImg" alt="" style="height: 140%; width: 140%;">
+                    </div>
+                    <div class="mt-4">
+                        <h3>DIGITAL WALLET</h3>
+                        <h2 class="fw-bold">Like your wallet, but smarter</h2>
+                        <p style="font-size: 1rem;">DANA Wallet makes it easier to access all your transaction needs and start investing.</p>
+                        <a href="digital-wallet.html" class="text-decoration-none">
+                            <button class="btn btn-yellow rounded-5 d-flex align-items-center justify-content-center" type="button" style="width: 100%;">
+                                <div>Learn More</div>
+                                <i class="bi bi-arrow-right mt-1 ps-2"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-scroll mt-5" style="margin-bottom: -5rem;">
+            <div class="container grid-scroll-desktop px-5">
+                <div class="scroll-wrapper position-relative">
+                    <div class="scroll-container">
+                        <div class="custom-card bg-white px-4 pt-5 rounded-4 pb-0">
+                            <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">View all assets directly from DANA Wallet</h5>
+                            <div class="d-flex justify-content-center mt-4">
+                                <img src="../Assets/grid-scroll/dana-wallet.png" class="img-fluid px-3" alt="">
+                            </div>
+                        </div>
+                        <div class="custom-card bg-white px-4 pt-5 rounded-4 pb-0">
+                            <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Send money easily & flexibly</h5>
+                            <div class="d-flex justify-content-center mt-4">
+                                <img src="../Assets/grid-scroll/kirim-uang.png" class="img-fluid px-3" alt="">
+                            </div>
+                        </div>
+                        <div class="custom-card bg-white px-4 pt-5 rounded-4 pb-0">
+                            <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Pay using QRIS for anything</h5>
+                            <div class="d-flex justify-content-center mt-4">
+                                <img src="../Assets/grid-scroll/qris.png" class="img-fluid px-3" alt="">
+                            </div>
+                        </div>
+                        <div class="custom-card bg-white px-4 pt-5 rounded-4 pb-0">
+                            <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Request money easily with QR & Link</h5>
+                            <div class="d-flex justify-content-center mt-5 pt-1">
+                                <img src="../Assets/grid-scroll/qr.png" class="img-fluid pe-3 ps-5" alt="">
+                            </div>
+                        </div>
+                        <div class="custom-card bg-white px-4 pt-5 rounded-4 pb-0">
+                            <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Save Bank Cards for your payments</h5>
+                            <div class="d-flex justify-content-center mt-5 pt-3">
+                                <img src="../Assets/grid-scroll/kartu-bank.png" class="img-fluid px-3" alt="">
+                            </div>
+                        </div>
+                        <div class="custom-card bg-white px-4 pt-5 rounded-4 pb-0">
+                            <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Dana Kaget makes gifting fun</h5>
+                            <div class="d-flex justify-content-center mt-5 pt-3">
+                                <img src="../Assets/grid-scroll/dana-kaget.png" class="img-fluid px-3" alt="">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <button class="scroll-btn right rounded-circle">
+                        <i class="bi bi-arrow-right mt-1 ps-2"></i>
+                    </button>
+                    <button class="scroll-btn left me-3 rounded-circle">
+                        <i class="bi bi-arrow-left mt-1 ps-2"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container grid-scroll-mobile px-5">
+                <div class="row">
+                    <div class="col-12 bg-white px-4 mt-4 pt-5 rounded-4 pb-0">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">View all assets directly from DANA Wallet</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/dana-wallet.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white px-4 mt-4 pt-5 rounded-4 pb-0">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Send money easily & flexibly</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/kirim-uang.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white px-4 mt-4 pt-5 rounded-4 pb-0 mobile-card3">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Pay using QRIS for anything</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/qris.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white px-4 mt-4 pt-5 rounded-4 pb-0 mobile-card3">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Request money easily with QR & Link</h5>
+                        <div class="d-flex justify-content-center mt-5 pt-1">
+                            <img src="../Assets/grid-scroll/qr.png" class="img-fluid pe-3 ps-5" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white px-4 mt-4 pt-5 rounded-4 pb-0 mobile-card3">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Save Bank Cards for your payments</h5>
+                        <div class="d-flex justify-content-center mt-5 pt-3">
+                            <img src="../Assets/grid-scroll/kartu-bank.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white px-4 mt-4 pt-5 rounded-4 pb-0 mobile-card3">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Dana Kaget makes gifting fun</h5>
+                        <div class="d-flex justify-content-center mt-5 pt-3">
+                            <img src="../Assets/grid-scroll/dana-kaget.png" class="img-fluid px-3" alt="">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="text-center container px-4 mt-4 d-md-none">
+                <button id="loadMoreMobile3" class="btn btn-outline-blue text-blue border-2 px-4 py-2 rounded-4 fw-bold btn-yellow" style="width: 100%;">
+                    See More
+                </button>
+            </div>
+        </section>
+
+        <section class="LayananKeuangan bg-blue pt-5">
+            <div class="container px-5">
+                <div class="row LayananKeuanganDesktop pt-4 gap-5 d-flex align-items-center">
+                    <div class="col-6">
+                        <h3>FINANCIAL SERVICES</h3>
+                        <h1 class="title w-100">Safe guaranteed, getting closer to your dreams</h1>
+                        <p>eMAS investments are secure and can be redeemed for physical gold, supported by a digital gold provider supervised by BAPPEBTI. Monitor the latest prices on DANA!</p>
+                        <button class="btn btn-yellow rounded-5 d-flex align-items-center" type="button">
+                            <div>Learn More</div>
+                            <i class="bi bi-arrow-right mt-1 ps-2"></i>
+                        </button>
+                    </div>
+                    <div class="col-4 LayananKeuanganBg mt-5 ms-5">
+                        <img src="../Assets/LayananKeuangan.png" class="img-fluid LayananKeuanganImg" alt="">
+                    </div>
+                </div>
+                <div class="row LayananKeuanganMobile pt-5 mt-3 d-flex align-items-center">
+                    <div class="LayananKeuanganBg mt-5" style="margin-left: -1rem;">
+                        <img src="../Assets/LayananKeuangan.png" class="img-fluid LayananKeuanganImg" alt="">
+                    </div>
+                    <div class="mt-4">
+                        <h3>FINANCIAL SERVICES</h3>
+                        <h2 class="title" style="font-size: 2rem;">Safe & Secure, Bringing You Closer to Your Dreams</h2>
+                        <p style="font-size: 1rem;">eMAS investments are secure and can be redeemed for physical gold, supported by a digital gold provider supervised by BAPPEBTI. Monitor the latest prices on DANA!</p>
+                        <a href="template.html" class="text-decoration-none">
+                            <button class="btn btn-yellow rounded-5 d-flex align-items-center justify-content-center" type="button" style="width: 100%;">
+                                <div>Learn More</div>
+                                <i class="bi bi-arrow-right mt-1 ps-2"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="unscrollable-card bg-blue" style="padding: 2rem 0 5rem 0;">
+            <div class="container px-5">
+                <div class="row pt-5 unscrollable-card-desktop">
+                    <div class="col bg-white mx-4 px-4 py-0 pt-4 rounded-4" style="height: 280px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Pay your needs easier with DANA Installments</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/dana-cicil.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col bg-white px-4 mx-4 pb-0 pt-4 rounded-4" style="height: 280px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Protect what matters with DANA Siaga</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/dana-siaga.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col bg-white px-4 mx-4 pb-0 pt-4 rounded-4" style="height: 280px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Safe, worry-free investing in eMAS</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/eMas.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 unscrollable-card-mobile" style="margin-left: -3rem;">
+                    <div class="col-12 bg-white mx-4 mt-5 px-4 py-0 pt-4 rounded-4" style="height: 380px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Pay your needs easier with DANA Installments</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/dana-cicil.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white px-4 mt-5 mx-4 pb-0 pt-4 rounded-4" style="height: 380px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Protect what matters with DANA Siaga</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/dana-siaga.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white px-4 mt-5 mx-4 pb-0 pt-4 mobile-card2 rounded-4" style="height: 380px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Safe, worry-free investing in eMAS</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/eMas.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-3 d-md-none">
+                    <button id="loadMoreMobile2" class="btn btn-outline-light border-2 px-4 py-2 rounded-4 fw-bold btn-yellow" style="width: 100%;">
+                        See More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="GayaHidup mt-5">
+            <div class="container px-5">
+                <div class="row GayaHidupDesktop gap-5">
+                    <div class="col-5 GayaHidupBg px-5 mt-5">
+                        <img src="../Assets/GayaHidup.png" class="img-fluid GayaHidupImg" alt="">
+                    </div>
+                    <div class="col-6 ps-5">
+                        <h3>LIFESTYLE</h3>
+                        <h1 class="title">Save more with vouchers</h1>
+                        <p>Find and buy vouchers that fit your needs. Get complete information about voucher value, validity period, and how to use them.</p>
+                        <button class="btn btn-yellow rounded-5 d-flex align-items-center" type="button">
+                            <div>Learn More</div>
+                            <i class="bi bi-arrow-right mt-1 ps-2"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="GayaHidupMobile gap-5" style="margin-top: 5rem;">
+                    <div class="GayaHidupBg px-5 mt-5">
+                        <img src="../Assets/GayaHidup.png" class="img-fluid GayaHidupImg" alt="">
+                    </div>
+                    <div class="mt-4">
+                        <h3>LIFESTYLE</h3>
+                        <h2 class="fw-bold">Save more with vouchers</h2>
+                        <p style="font-size: 1rem;">Find and buy vouchers that fit your needs. Get complete information about voucher value, validity period, and how to use them.</p>
+                        <a href="template.html" class="text-decoration-none">
+                            <button class="btn btn-yellow rounded-5 d-flex align-items-center justify-content-center" type="button" style="width: 100%;">
+                                <div>Learn More</div>
+                                <i class="bi bi-arrow-right mt-1 ps-2"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="unscrollable-card" style="padding: 2rem 0 5rem 0;">
+            <div class="container px-5">
+                <div class="row pt-5 unscrollable-card-desktop">
+                    <div class="col bg-white mx-4 px-4 pb-0 pt-4 rounded-4" style="height: 280px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">My Bills manages all your bills</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/myBills.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col bg-white px-5 mx-4 px-4 pt-4 pb-0 rounded-4" style="height: 280px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Get exciting vouchers only on DANA Deals</h5>
+                        <div class="d-flex justify-content-center mt-4 pt-1">
+                            <img src="../Assets/grid-scroll/DanaDeals.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col bg-white px-4 mx-4 pb-0 pt-4 rounded-4" style="height: 280px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Share your activities on DANA Feed</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/DanaFeeds.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 unscrollable-card-mobile">
+                    <div class="col mt-4 bg-white mx-4 px-4 pb-0 pt-4 rounded-4" style="height: 280px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">My Bills manages all your bills</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/myBills.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col mt-4 bg-white px-5 mx-4 px-4 pt-4 pb-0 rounded-4" style="height: 280px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Get exciting vouchers only on DANA Deals</h5>
+                        <div class="d-flex justify-content-center mt-4 pt-1">
+                            <img src="../Assets/grid-scroll/DanaDeals.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                    <div class="col mt-4 bg-white px-4 mx-4 pb-0 pt-4 rounded-4 mobile-card1" style="height: 280px; overflow: hidden;">
+                        <h5 class="fw-bold text-center" style="letter-spacing: 0.4px;">Share your activities on DANA Feed</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <img src="../Assets/grid-scroll/DanaFeeds.png" class="img-fluid px-3" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-3 d-md-none">
+                    <button id="loadMoreMobile1" class="btn text-blue btn-outline-blue border-2 px-4 py-2 rounded-4 fw-bold btn-yellow" style="width: 100%;">
+                        See More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="Keamanan KeamananDesktop bg-blue">
+            <div class="container px-5">
+                <div class="row gap-5">
+                    <div class="">
+                        <h3>SECURITY</h3>
+                        <h1 class="title">Protection with DANA Protection</h1>
+                        <p class="mt-3">With PCI DSS & ISO 27001 security standards, DANA protects your payment data and personal information. Guarantees apply in case of loss of money in DANA Balance, bank cards & other stored money sources in DANA.</p>
+                    </div>   
+                    <div class="KeamananBg">
+                        <img src="../Assets/Keamanan.png" class="img-fluid KeamananImg" alt="" style="width: 100%; margin-left: -3rem;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="KeamananMobile Keamanan bg-blue">
+            <div class="container px-5">
+                <div class="row gap-5">
+                    <div class="KeamananBg">
+                        <img src="../Assets/Keamanan.png" class="img-fluid KeamananImg" alt="" style="width: 100%; margin-left: -3rem;">
+                    </div>
+                    <div class="" style="margin-top: 17rem;">
+                        <h3>SECURITY</h3>
+                        <h1 class="text-white">Protection with DANA Protection</h1>
+                        <p class="mt-3" style="font-size: 1rem;">With PCI DSS & ISO 27001 security standards, DANA protects your payment data and personal information. Guarantees apply in case of loss of money in DANA Balance, bank cards & other stored money sources in DANA.</p>
+                    </div>   
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-scroll bg-blue pt-3">
+            <div class="container px-5 pb-5">
+                <div class="scroll-wrapper custom-card-desktop position-relative">
+                    <div class="scroll-container">
+                        <div class="custom-card bg-white p-4 rounded-4">
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/Protection/search.png" class="img-fluid" alt="">
+                            </div>
+                            <h3 class="fw-bold text-center mt-3" style="letter-spacing: 0.4px;">Check Fraud Risk</h3>
+                            <p class="text-center">Feature to verify that links & contacts reaching you are officially from DANA.</p>
+                        </div>
+                        <div class="custom-card bg-white p-4 rounded-4">
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/Protection/lock.svg" class="img-fluid" alt="">
+                            </div>
+                            <h3 class="fw-bold text-center mt-3" style="letter-spacing: 0.4px;">DANA Balance Protection</h3>
+                            <p class="text-center">100% balance refund guarantee* for transactions not made by you.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="template.html" class="text-decoration-none">
+                                    <button class="keamanan-btn btn-yellow rounded-5 d-flex mt-0" type="button">
+                                        <div>See More</div>
+                                        <i class="bi bi-arrow-right mt-1 ps-2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="custom-card bg-white py-4 rounded-4">
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/Protection/card.svg" class="img-fluid" alt="">
+                            </div>
+                            <h3 class="fw-bold text-center mt-3" style="letter-spacing: 0.4px;">Bank Card Info Security</h3>
+                            <p class="text-center">Only you know the details of the stored card information.</p>
+                        </div>
+                        <div class="custom-card bg-white p-4 rounded-4">
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/Protection/protect.svg" class="img-fluid" alt="">
+                            </div>
+                            <h3 class="fw-bold text-center mt-3" style="letter-spacing: 0.4px;">DANA Account Protection</h3>
+                            <p class="text-center">Account security through verification processes for all activities.</p>
+                        </div>
+                        <div class="custom-card bg-white p-4 rounded-4">
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/Protection/pcidss.svg" class="img-fluid" alt="">
+                            </div>
+                            <h3 class="fw-bold text-center mt-3" style="letter-spacing: 0.4px;">PCI-DSS Standard</h3>
+                            <p class="text-center">Protects payment information using industry-standard card security protocols.</p>
+                        </div>
+                        <div class="custom-card bg-white p-4 rounded-4">
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/Protection/bi.svg" class="img-fluid" alt="">
+                            </div>
+                            <h3 class="fw-bold text-center mt-3" style="letter-spacing: 0.4px;">Category 1 PSP</h3>
+                            <p class="text-center">Registered with Bank Indonesia as a Payment Service Provider with Category I license.</p>
+                        </div>
+                        <div class="custom-card bg-white p-4 rounded-4">
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/Protection/snap.svg" class="img-fluid" alt="">
+                            </div>
+                            <h3 class="fw-bold text-center mt-3" style="letter-spacing: 0.4px;">SNAP Integrated</h3>
+                            <p class="text-center">Secure payment system following Bank Indonesia standards.</p>
+                        </div>
+                        <div class="custom-card bg-white p-4 rounded-4">
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/grid-scroll/icon_iso_4337e38590.png" class="img-fluid" alt="">
+                            </div>
+                            <h3 class="fw-bold text-center mt-3" style="letter-spacing: 0.4px;">ISO 27001 Standard</h3>
+                            <p class="text-center">Maintains information security according to International Standards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-3 d-md-none">
+                    <button id="loadMoreMobile" class="btn btn-outline-light border-2 px-4 py-2 rounded-4 fw-bold btn-yellow" style="width: 100%;">
+                        See More
+                    </button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="Testimoni Desktop mt-5">
+            <div class="container px-5">
+                <p class="text-blue mb-1">TESTIMONI</p>
+                <h1 class="fw-bold">Cerita dari TemanDANA</h1>
+
+                <div class="testimonial-container mt-5">
+                    <div class="testimonial-text bg-white rounded-4 px-5 py-3">
+                        <div style="height: 65%;">
+                            <div class="quotation">“</div>
+                            <p id="quote" class="quote mt-3 fs-4">"Sangat mudah untuk kirim saldo apalagi banyak keluarga dan teman memakai DANA juga."</p>
+                        </div>
+                        <div>
+                            <h5 id="name" class="name fw-bold mt-4">Agung Setiyono</h5>
+                            <p id="role" class="role">Mahasiswa | 26 tahun</p>
+                        </div>
+                        <div class="nav-buttons">
+                            <button class="btn-nav right" id="nextBtn">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                            <button class="btn-nav left" id="prevBtn">
+                                <i class="bi bi-arrow-left"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="testimonial-photo">
+                        <img id="photo" src="../Assets/AgungSetiyono.jpg" alt="testimonial photo"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Testimoni Mobile mt-5">
+            <div class="container px-5">
+                <p class="text-blue mb-1">TESTIMONI</p>
+                <h1 class="fw-bold">Cerita dari TemanDANA</h1>
+                
+                <div class="testimonial-photo mt-4">
+                    <img id="photoM" src="../Assets/AgungSetiyono.jpg" alt="testimonial photo"/>
+                </div>
+
+                <div class="testimonial-container mt-5">
+                    <div class="testimonial-text bg-white rounded-4 px-5 py-3" style="height: 500px;">
+                        <div style="height: 55%;">
+                            <div class="quotation">“</div>
+                            <p id="quoteM" class="quote mt-3 fs-4">"Sangat mudah untuk kirim saldo apalagi banyak keluarga dan teman memakai DANA juga."</p>
+                        </div>
+                        <div>
+                            <h5 id="nameM" class="name fw-bold mt-4">Agung Setiyono</h5>
+                            <p id="roleM" class="role">Mahasiswa | 26 tahun</p>
+                        </div>
+                        <div class="nav-buttons">
+                            <button class="btn-nav right" id="nextBtnM">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                            <button class="btn-nav left" id="prevBtnM">
+                                <i class="bi bi-arrow-left"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-blue px-4 mt-5">
+            <div class="container px-5">
+                <div class="footer-body">
+                    <div class="to-top clearfix">
+                        <a href="#">
+                            <button class="btn btn-pink fw-bold text-white fs-5 rounded-5 px-3 to-top-button">Back to Top<i class="bi bi-arrow-up ms-1"></i></button>
+                        </a>
+                    </div>
+                    <div class="main-footer mt-5">
+                        <div class="row">
+                            <div class="col-6 col-md">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Payment Solutions</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Payment Gateway</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Payment API</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Point of Sales</a></li>
+                                    <li style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Business</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Disbursement</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Disbursement</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Enterprise Wallet</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md mt-5 mt-md-0">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Promotions</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Deals</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Loyalty</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-white footer-border mt-5"></div>
+                        <div class="Desktop">
+                            <div class="row d-flex align-items-center justify-content-center g-0">
+                                <div class="col-3 mt-2">
+                                    <p class="fs-5 text-white">Download the DANA App</p>
+                                </div>
+                                <div class="col-2">
+                                    <a href="https://play.google.com/store/apps/details?id=id.dana&hl=id" target="_blank"><img src="../Assets/PlayStore.svg" class="img-fluid" alt=""></a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://apps.apple.com/id/app/dana-dompet-digital-indonesia/id1437123008" target="_blank"><img src="../Assets/AppStore.svg" class="img-fluid" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row mt-2 py-5 d-flex align-items-center justify-content-center g-0">
+                                <div class="col-6 mt-3">
+                                    <p class="text-white fs-5" style="letter-spacing: 0.3px;">DANA Indonesia is registered and supervised by</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="../Assets/BILogo.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="../Assets/KomdigiLogo.svg" class="img-fluid" style="width: 20%;" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Mobile">
+                            <div class="mt-2">
+                                <p class="fs-5 text-white">Download the DANA App</p>
+                            </div>
+                            <div class="">
+                                <a href="https://play.google.com/store/apps/details?id=id.dana&hl=id" target="_blank"><img src="../Assets/PlayStore.svg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="mt-3">
+                                <a href="https://apps.apple.com/id/app/dana-dompet-digital-indonesia/id1437123008" target="_blank"><img src="../Assets/AppStore.svg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="mt-2 py-5">
+                                <p class="text-white fs-5" style="letter-spacing: 0.3px;">DANA Indonesia is registered and supervised by</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="../Assets/BILogo.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <img src="../Assets/KomdigiLogo.svg" class="img-fluid" style="width: 40%;" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="bg-darkblue Desktop px-4">
+            <div class="container px-5 mx-5">
+                <div class="footer-bottom pt-5">
+                    <div class="d-flex align-items-center justify-content-start gap-3 pb-3">
+                        <img src="../Assets/DanaLogo.png" class="img-fluid" style="width: 12%;" alt="">
+                        <p class="text-white mt-3 ms-3">&copy; 2024 DANA - PT. Espay Debit Indonesia Koe. All Rights Reserved.</p>
+                        <div style="margin-left: 8rem;">
+                            <a href="https://www.facebook.com/danawallet/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/facebook-logo.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/dana.id/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/instagram-logo.svg" alt="Instagram"></a>
+                            <a href="https://twitter.com/danawallet" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/twitter-logo.svg" alt="Twitter"></a>
+                            <a href="https://www.youtube.com/channel/UC5SXW8337jcLG0Xp3lHbphw" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/youtube-logo.svg" alt="Youtube"></a>
+                            <a href="https://www.linkedin.com/company/dana-indonesia" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/linkedin-logo.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="bg-darkblue Mobile px-4">
+            <div class="container">
+                <div class="footer-bottom mx-3 pt-5">
+                    <div class="pb-3">
+                        <img src="../Assets/DanaLogo.png" class="img-fluid" style="width: 25%;" alt="">
+                        <p class="text-white mt-3">&copy; 2024 DANA - PT. Espay Debit Indonesia Koe. All Rights Reserved.</p>
+                        <div style="margin-left: -1rem;">
+                            <a href="https://www.facebook.com/danawallet/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/facebook-logo.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/dana.id/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/instagram-logo.svg" alt="Instagram"></a>
+                            <a href="https://twitter.com/danawallet" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/twitter-logo.svg" alt="Twitter"></a>
+                            <a href="https://www.youtube.com/channel/UC5SXW8337jcLG0Xp3lHbphw" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/youtube-logo.svg" alt="Youtube"></a>
+                            <a href="https://www.linkedin.com/company/dana-indonesia" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/linkedin-logo.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const popup = document.getElementById('popupPage');
+            const openBtn = document.getElementById('openPopup');
+            const modal = new bootstrap.Modal(popup);
+
+            openBtn.addEventListener('click', () => modal.show());
+
+            popup.addEventListener('click', function (e) {
+                if (!e.target.closest('.modal-dialog')) {
+                modal.hide();
+                }
+            });
+            });
+        </script>
+        <script src="script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

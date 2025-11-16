@@ -22,6 +22,16 @@
   color: #108ee9 !important;
 }
 
+.btn-outline-blue {
+  border: 2px solid #108ee9 !important;
+}
+
+.btn-language {
+  border: 2px solid white !important;
+  background-color: transparent !important;
+  color: white !important;
+}
+
 /* ======================= BUTTON ======================= */
 
 .btn-pink {
@@ -41,6 +51,35 @@ body {
   background-color: #f5f5f5 !important;
 }
 
+.Mobile {
+  display: none;
+}
+
+@media (max-width: 981px) {
+  .Desktop {
+    display: none;
+  }
+
+  .Mobile {
+    display: block;
+  }
+}
+
+.mobile-card {
+  display: none;
+}
+
+.mobile-card1 {
+  display: none;
+}
+
+.mobile-card2 {
+  display: none;
+}
+
+.mobile-card3 {
+  display: none;
+}
 
 /* ======================= HEADER ======================= */
 
@@ -60,8 +99,7 @@ nav {
 
 .dropdown {
   position: relative;
-  top: 75%; 
-  left: -70;
+  top: 100%; 
   background: white;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -71,13 +109,6 @@ nav {
   gap: 10px;
   width: 300px;
   z-index: 9999;
-  pointer-events: auto; 
-  margin-top: 10px;
-}
-
-header {
-  position: relative; 
-  z-index: 10;
 }
 
 .nav-item:hover .dropdown {
@@ -85,17 +116,214 @@ header {
   position: absolute;
 }
 
+header {
+  position: relative;
+  z-index: 10;
+}
+
 main, section, .container, .hero, .content {
   position: relative;
   z-index: 1;
 }
 
-.btn-language:hover {
-  background-color: inherit !important;
-  color: inherit !important;
-  border-color: inherit !important;
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
 }
 
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.drawer-tab.active {
+  color: #007bff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+}
+
+@media (max-width: 991px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    color: #108ee9;
+    transition: 0.3s ease;
+    flex-direction: column;
+    padding: 2rem;
+    z-index: 999;
+  }
+
+  .main-nav.active {
+    right: 0;
+  }
+
+  .main-nav a {
+    color: #108ee9 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .hamburger.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .me-5 {
+    display: none !important;
+  }
+
+  .nav-item:hover .dropdown {
+    position: relative;
+    display: flex;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+  transform: translateY(-100%); 
+  transition: transform 0.5s ease;
+  overflow-y: auto;
+}
+
+.mobile-drawer.open {
+  right: 0;
+  transform: translateY(0);
+}
+
+.drawer-header img {
+  width: 45px;
+}
+
+.drawer-tabs {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.drawer-tab {
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.drawer-tab.active {
+  background: #eaf5ff;
+  color: #108ee9;
+}
+
+.text-lightblue {
+  color: #108ee9;
+}
+
+.blue-line {
+  height: 3px;
+  width: 25%;
+  background: #108ee9;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.accordion .accordion-item {
+  margin-top: 20px;
+  border: none;
+}
+
+.accordion-btn {
+  all: unset;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.accordion-content {
+  display: none;
+  margin-top: 10px;
+  
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+.acc-link {
+  display: block;
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.drawer-footer {
+  background: #f7f7f7;
+}
+
+.btn-lang {
+  background: rgb(249, 249, 249);
+  border: 2px solid #108ee9;
+  border-radius: 30px;
+}
+
+.btn-lang:hover {
+  background: rgb(249, 249, 249);
+  border: 2px solid #108ee9;
+  border-radius: 30px;
+}
+
+
+.drawer-content {
+  display: none;
+}
+
+.drawer-content.show {
+  display: block;
+}
+
+.drawer-scroll-area {
+  height: calc(100vh - 150px);  
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+.drawer-footer {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  border-top: 1px solid #eee;
+}
 /* ======================= HERO ======================= */
 
 .video-background {
@@ -138,6 +366,20 @@ main, section, .container, .hero, .content {
   top: 40%;
 }
 
+.hero-image {
+  display: none;
+}
+
+@media (max-width: 981px) {
+  #bg-video {
+    display: none;
+  }
+
+  .hero-image {
+    display: block;
+  }
+}
+
 /* ======================= MAIN ======================= */
 
 .first-row{
@@ -147,6 +389,32 @@ main, section, .container, .hero, .content {
 .first-row .first-img { 
   margin-left: 100px;
 }
+
+@media (min-width: 768px) { 
+  .test {
+    width: 65% !important;
+  }
+
+  .mobile-row {
+    display: none;
+  }
+}
+
+@media (max-width: 981px) {
+  .main-text {
+    display: none;
+  }
+
+  .first-row {
+    display: none;
+  }
+
+  .mobile-row {
+    display: block;
+  }
+
+}
+
 
 /* ======================= DOMPETDIGITAL ======================= */
 
@@ -165,7 +433,7 @@ main, section, .container, .hero, .content {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("Assets/DompetDigitalBg.png") center/cover no-repeat;
+  background: url("../Assets/DompetDigitalBg.png") center/cover no-repeat;
   filter: blur(1px) brightness(0.95);
   z-index: 0;
   border-radius: 20px;
@@ -215,6 +483,21 @@ main, section, .container, .hero, .content {
   font-weight: bold;
   margin-top: 20px;
 }
+
+.DompetDigitalMobile {
+  display: none;
+}
+
+@media (max-width: 981px) {
+  .DompetDigitalDesktop {
+    display: none;
+  }
+
+  .DompetDigitalMobile {
+    display: block;
+  }
+}
+
 
 /* ======================= LAYANAN KEUANGAN ======================= */
 
@@ -269,7 +552,7 @@ main, section, .container, .hero, .content {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("Assets/LayananKeuanganBg.png") center/cover no-repeat;
+  background: url("../Assets/LayananKeuanganBg.png") center/cover no-repeat;
   filter: blur(1px) brightness(0.95);
   z-index: 0;
   border-radius: 20px;
@@ -286,6 +569,32 @@ main, section, .container, .hero, .content {
 
 .LayananKeuangan h1 {
   font-size: 3.5rem !important;
+}
+
+.LayananKeuanganMobile {
+  display: none !important;
+}
+
+.unscrollable-card-mobile {
+  display: none !important;
+}
+
+@media (max-width: 981px) {
+  .LayananKeuanganDesktop {
+    display: none !important;
+  }
+
+  .LayananKeuanganMobile {
+    display: block !important;
+  }
+
+  .unscrollable-card-desktop {
+    display: none !important;
+  }
+
+  .unscrollable-card-mobile {
+    display: block !important;
+  }
 }
 
 
@@ -339,6 +648,21 @@ main, section, .container, .hero, .content {
   font-size: 2rem;
 }
 
+.grid-scroll-mobile {
+  display: none;
+}
+
+@media (max-width: 981px) {
+  .grid-scroll-desktop {
+    display: none;
+  }
+
+  .grid-scroll-mobile {
+    display: block;
+  }
+}
+
+
 /* ======================= GAYA HIDUP ======================= */
 
 .GayaHidupBg {
@@ -355,7 +679,7 @@ main, section, .container, .hero, .content {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("Assets/DompetDigitalBg.png") center/cover no-repeat;
+  background: url("../Assets/DompetDigitalBg.png") center/cover no-repeat;
   filter: blur(1px) brightness(0.95);
   z-index: 0;
   border-radius: 20px;
@@ -404,6 +728,20 @@ main, section, .container, .hero, .content {
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
+}
+
+.GayaHidupMobile {
+  display: none !important;
+}
+
+@media (max-width: 981px) {
+  .GayaHidupDesktop {
+    display: none !important;
+  }
+
+  .GayaHidupMobile {
+    display: block !important;
+  }
 }
 
 /* ======================= KEAMANAN ======================= */
@@ -468,6 +806,33 @@ main, section, .container, .hero, .content {
   background-color: white;
 }
 
+.custom-card-mobile {
+  display: none !important;
+}
+
+.KeamananMobile {
+  display: none !important;
+}
+
+@media (max-width: 981px) {
+  .custom-card-desktop {
+    display: none !important;
+  }
+
+  .custom-card-mobile {
+    display: block !important;
+  }
+
+  .KeamananDesktop {
+    display: none !important;
+  }
+
+  .KeamananMobile {
+    display: block !important;
+  }
+
+}
+
 
 /* ======================= TESTIMONI ======================= */
 
@@ -484,6 +849,9 @@ main, section, .container, .hero, .content {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .testimonial-text {
@@ -499,6 +867,9 @@ main, section, .container, .hero, .content {
   height: 700px;
   border-radius: 20px;
   transition: opacity 0.5s ease;
+  max-width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .btn-nav {

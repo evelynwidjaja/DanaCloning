@@ -1,0 +1,746 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="sticky-top d-flex justify-content-between fs-5 align-items-center p-3 text-white fw-bold">
+            <div class="d-flex align-items-center">
+                <div class="d-flex justify-content-center mt-1">
+                    <a href="index-en.html"><img src="../Assets/GapuraLogoHeader.png" class="img-fluid ms-4" style="width: 40%;" alt=""></a>
+                </div>
+                <nav class="main-nav" style="margin-left: -4rem;">
+                    <ul class="d-flex list-unstyled gap-2 mb-0">
+                        <li class="nav-item position-relative">
+                            <a href="#" class="text-white text-decoration-none">Personal <span class="ms-2 text-ligthblue">|</span></a>
+                            <div class="dropdown">
+                                <h3 class="text-white my-0 fw-bold">Personal <i class="bi bi-arrow-up-right ms-1"></i></h3>
+                                <hr class="my-0 fs-4" style="all: unset; height: 3px; background-color: #ffffff; width: 60%; border-radius: 2px;">
+                                <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">Digital Wallet</a>
+                                <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">Financial Services</a>
+                                <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">Lifestyle</a>
+                            </div>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a href="#" class="text-white text-decoration-none">Business <span class="ms-2 text-ligthblue">|</span></a>
+                            <div class="dropdown" style="width: 850px; left: -10rem;">
+                                <h3 class="text-white my-0 fw-bold">Explore DANA for Business <i class="bi bi-arrow-up-right ms-1"></i></h3>
+                                <hr class="my-0 fs-4" style="all: unset; height: 3px; background-color: #ffffff; width: 47%; border-radius: 2px;">
+                                <div class="row">
+                                    <div class="col-4  mt-4">
+                                        <h4 class="fw-bold text-white">Payment Gateway</h4>
+                                        <a href="gapura-en.html" class="text-decoration-none text-white fw-normal mt-2">About Gapura</a><br>
+                                        <a href="calculator-en.html" class="text-decoration-none text-white fw-normal mt-2">Fee Calculator</a>
+                                    </div>
+                                    <div class="col-4  mt-4">
+                                        <h4 class="fw-bold text-white">Payment Solutions</h4>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">Integrated Payment</a><br>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">Point of Sales</a><br>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">DANA Business</a>
+                                    </div>
+                                    <div class="col-4  mt-4">
+                                        <h4 class="fw-bold text-white">Disbursement</h4>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">DANA Disbursement</a>
+                                    </div>
+                                    <div class="col-4  mt-4">
+                                        <h4 class="fw-bold text-white">Promotions</h4>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">DANA Deals</a><br>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">Loyalty</a>
+                                    </div>
+                                    <div class="col-4  mt-4">
+                                        <h4 class="fw-bold text-white">Others</h4>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">Price Info</a><br>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">Merchant Documents</a><br>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">Contact Us</a><br>
+                                        <a href="template.html" class="text-decoration-none text-white fw-normal mt-2">API Documents</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a href="#" class="text-white text-decoration-none">Corporate</a>
+                            <div class="dropdown" style="width: 280px;">
+                                <a href="template" class="text-decoration-none text-white fw-normal mt-2">About Us</a>
+                                <a href="template" class="text-decoration-none text-white fw-normal mt-2">Careers</a>
+                                <a href="template" class="text-decoration-none text-white fw-normal mt-2">Newsroom</a>
+                                <a href="template" class="text-decoration-none text-white fw-normal mt-2">Blog</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="hamburger d-lg-none" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="me-5 d-none d-lg-flex align-items-center">
+                <a href="calculator.html" class="text-decoration-none" style="all: unset;">
+                    <button type="button" class="btn btn-language btn-outline-light rounded-5 border-2 px-3 py-1">
+                        <span class="fw-bold">EN</span>
+                        <img src="../Assets/uk.svg" class="mb-1 img-fluid rounded-circle border border-1 border-white me-1" style="width: 15px; height: 15px;" alt="Indonesia">
+                    </button>
+                </a>
+                <button type="button" class="ms-2 me-3 btn btn-yellow bg-lightblue rounded-5 px-3 py-1 fw-bold text-white" id="openPopup" style="border: 2px #18c1ff solid;">
+                    Download DANA
+                </button>
+                <div class="modal fade" id="popupPage" tabindex="-1" aria-labelledby="popupPageLabel" aria-hidden="true" data-bs-backdrop="false">
+                    <div class="modal-dialog modal-dialog-centered modal-lg w-50">
+                        <div class="modal-content rounded-4 py-5">
+                            <h1 class="text-center">Download Now!</h1>
+                            <p class="text-secondary text-center mt-2">Start transacting with DANA #NotJustAWallet</p>
+                            <div class="d-flex justify-content-center">
+                                <img src="../Assets/Barcode.png" class="img-fluid w-25" alt="">
+                            </div>
+                            <div class="download d-flex justify-content-center mt-4 gap-3">
+                                <a href="https://play.google.com/store/apps/details?id=id.dana&hl=id" target="_blank"><img src="../Assets/PlayStore.svg" class="img-fluid" alt=""></a>
+                                <a href="https://apps.apple.com/id/app/dana-dompet-digital-indonesia/id1437123008" target="_blank"><img src="../Assets/AppStore.svg" class="img-fluid" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </header>
+
+        <div class="mobile-drawer Mobile" id="mobileDrawer">
+            <div class="drawer-header d-flex justify-content-between align-items-center px-3 py-3">
+                <img src="../Assets/GapuraLogoHeader.png" style="width: 20%;">
+                <i class="bi bi-x-lg fs-4 text-white closeDrawer" id="closeDrawer"></i>
+            </div>
+
+            <div class="drawer-tabs d-flex mt-3 gap-3 px-3 mb-3">
+                <span class="drawer-tab active text-white" data-target="content-personal">Personal</span>
+                <span class="drawer-tab text-white" data-target="content-bisnis">Business</span>
+                <span class="drawer-tab text-white" data-target="content-perusahaan">Corporate</span>
+            </div>
+
+            <div class="drawer-scroll-area">
+                <div class="drawer-content show" style="height: 320px;" id="content-personal">
+                    <div class="px-3">
+                        <h5 class="text-white fw-bold">
+                            Personal <i class="bi bi-arrow-up-right"></i>
+                        </h5>
+                        <div class="blue-line" style="width: 20%;"></div>
+                    </div>
+                    <div class="accordion px-3">
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn text-white">Digital Wallet</button>
+                            </a>
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn text-white">Financial Services</button>
+                            </a>    
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn text-white">Lifestyle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer-content" style="height: 320px;" id="content-bisnis">
+                    <div class="px-3">
+                        <h5 class="text-white fw-bold">
+                            Explore DANA for Business <i class="bi bi-arrow-up-right"></i>
+                        </h5>
+                        <div class="blue-line" style="width: 54%;"></div>
+                    </div>
+                    <div class="accordion px-3" id="bizAccordion">
+                        <div class="accordion-item">
+                            <button class="accordion-btn text-white">Payment Gateway</button>
+                            <div class="accordion-content">
+                                <a href="gapura.html" class="acc-link text-white">About Gapura</a>
+                                <a href="calculator.html" class="acc-link text-white">Fee Calculator</a>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-btn text-white">Payment Solutions</button>
+                            <div class="accordion-content">
+                                <a href="template.html" class="acc-lin text-whitek">Integrated Payment</a>
+                                <a href="template.html" class="acc-link text-white">Point of Sales</a>
+                                <a href="template.html" class="acc-link text-white">DANA Business</a>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-btn text-white">Disbursement</button>
+                            <div class="accordion-content">
+                                <a href="template.html" class="acc-link text-white">DANA Disbursement</a>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-btn text-white">Promotions</button>
+                            <div class="accordion-content">
+                                <a href="template.html" class="acc-link text-white">DANA Deals</a>
+                                <a href="template.html" class="acc-link text-white">Loyalty</a>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-btn text-white">Others</button>
+                            <div class="accordion-content">
+                                <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2 text-white">Price Info</a><br>
+                                <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2 text-white">Merchant Documents</a><br>
+                                <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2 text-white">Contact Us</a><br>
+                                <a href="template.html" class="text-decoration-none text-secondary fw-normal mt-2 text-white">API Documents</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer-content" style="height: 320px;" id="content-perusahaan">
+                    <div class="px-3">
+                        <h5 class="text-white fw-bold">
+                            Corporate <i class="bi bi-arrow-up-right"></i>
+                        </h5>
+                        <div class="blue-line"></div>
+                    </div>
+                    <div class="accordion px-3">
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn text-white">About Us</button>
+                            </a>
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn text-white">Careers</button>
+                            </a>
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn text-white">Newsroom</button>
+                            </a>
+                        </div>
+                        <div class="accordion-item">
+                            <a href="template.html" class="text-decoration-none">
+                                <button class="accordion-btn text-white">Blog</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drawer-footer  px-3 py-3 d-flex align-items-center">
+                <button class="btn btn-lang"><img src="../Assets/Indonesia.png" class="me-2 img-fluid rounded-circle" style="width: 25px; height: 30px;"><b>ID</b></button>
+                <button type="button" class="ms-2 me-3 btn btn-yellow bg-lightblue rounded-5 px-3 py-1 fw-bold text-white" id="openPopup" style="border: 2px #18c1ff solid;">
+                    Sign Up FREE
+                </button>
+            </div>
+        </div>
+
+        <section class="hero">
+            <span class="background img-fluid"></span>
+            <span class="wrapper">
+                <div class="container HeroDesktop pt-2">
+                    <h2 style="width: 100%; font-size: 41px; letter-spacing: 1px; font-weight: 700;" class="mb-0 mt-3">Fee Calculator</h2>
+                    <p style="width: 100%; font-size: 21px; font-weight: 500; line-height: 29.4px; color: #727272;" class="mt-0 mb-0">Calculate transaction fees and tax deductions payable by customers</p>
+                    <div class="actions d-flex align-items-center gap-5">
+                        <a href="#exploregapura" style="all: unset; margin-left: -6rem;">
+                            <button class="btn-gapura btn-yellow bg-lightblue d-flex align-items-center">
+                                <div>Check Calculator</div>
+                                <i class="bi bi-arrow-right mt-1"></i>
+                            </button>
+                        </a>
+                        <button class="sec-btn btn-yellow">Register for FREE</button>
+                    </div>
+                </div>
+                <div class="container HeroMobile pt-2 ms-3" style="margin-top: 29rem;">
+                    <h2 style="width: 100%; font-size: 1.8rem; letter-spacing: 1px; font-weight: 700;" class="mb-0 mt-3 text-center">Fee Calculator</h2>
+                    <p style="width: 100%; font-size: 1.2rem; font-weight: 500; line-height: 29.4px; color: #727272;" class="mt-0 mb-0 text-center mt-3">Calculate transaction fees and tax deductions payable by customers</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="actions mt-4">
+                            <a href="#exploregapura" style="all: unset">
+                                <button class="btn-gapura btn-yellow bg-lightblue d-flex align-items-center justify-content-center" style="width: 450px;">
+                                    <div>Check Calculator</div>
+                                    <i class="bi bi-arrow-right mt-1"></i>
+                                </button>
+                            </a>
+                            <button class="sec-btn btn-yellow mt-3 justify-content-center" style="width: 450px;">Register for FREE</button>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </section>
+
+        <section class="calculator Desktop pt-5">
+            <div class="wrapper container">
+                <div class="input-wrapper text-center">
+                    <h2 class="fw-bold text-center">Enter Transaction Amount</h2>
+                    <div class="input-container" id="gapura-input-amount-container">
+                        <span class="input-wrapper">
+                            <input id="gapura-input-amount" class="input" type="text" pattern="[0-9.]" maxlength="13" autocomplete="off" value="10.000">
+                        </span>
+                    </div>
+                    <hr class="mt-0 mx-5 text-secondary">
+                    <p class="note">*Minimum Rp10,000</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator Mobile pt-5" style="margin-top: 22rem;">
+            <div class="wrapper container">
+                <div class="input-wrapper text-center">
+                    <h2 class="fw-bold text-center">Enter Transaction Amount</h2>
+                    <div class="input-container" id="gapura-input-amount-container">
+                        <label id="gapura-input-amount-label" class="label">Rp</label>
+                        <span class="input-wrapper">
+                            <input id="gapura-input-amount" class="input" type="text" pattern="[0-9.]" maxlength="13" autocomplete="off" value="10.000">
+                        </span>
+                    </div>
+                    <hr class="mt-0 mx-5 text-secondary">
+                    <p class="note pb-4">*Minimum Rp10,000</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-method-wrapper Desktop container">
+            <div class="payment-method fs-6 mx-4">
+                <div class="row">
+                    <div class="col-7">
+                        <div>
+                            <h2 class="fw-bold">Virtual Account</h2>
+                            <p class="text-secondary" style="font-size: 16px; letter-spacing: 0.3px; font-weight: 600;">Simple payments without manually entering transaction amounts using a unique virtual account number.</p>
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><img src="../Assets/Payment/BNI.png" class="img-fluid w-75" alt=""></div>
+                                <div class="col"><img src="../Assets/Payment/bri.png" class="img-fluid w-75" alt=""></div>
+                                <div class="col"><img src="../Assets/Payment/cimb-niaga.png" class="img-fluid w-75" alt=""></div>
+                                <div class="col"><img src="../Assets/Payment/panin-bank.png" class="img-fluid w-75" alt=""></div>
+                                <div class="col"><img src="../Assets/Payment/bank-mandiri.png" class="img-fluid w-75" alt=""></div>
+                                <div class="col"><img src="../Assets/Payment/bca.png" class="img-fluid w-75" alt=""></div>
+                            </div>
+                            <p class="text-secondary mt-2">*Bank fees are determined based on the agreement between merchant and bank.</p>
+                        </div>
+                    </div>
+                    <div class="col-5 bg-white py-5 px-4">
+                        <div class="row">
+                            <div class="col-7">
+                                <p style="letter-spacing: 0.3px;">Transaction fee (Rp2,500):</p>
+                                <p style="letter-spacing: 0.3px;">VAT (11%): </p>
+                            </div>
+                            <div class="col-5 text-end">
+                                <p style="letter-spacing: 0.3px;" id="">Rp 2,500</p>
+                                <p style="letter-spacing: 0.3px;" id="ppn">Rp 275</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-7">
+                                <p style="letter-spacing: 0.3px;">Amount received:</p>
+                            </div>
+                            <div class="col-5 text-end">
+                                <p style="letter-spacing: 0.3px;" id="hasil" class="fw-bold">Rp 7,225</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-0">
+
+                <div class="row">
+                    <div class="col-7 mt-4">
+                        <div class="mt-2">
+                            <h2 class="fw-bold">Bank Card</h2>
+                            <p class="text-secondary" style="font-size: 16px; letter-spacing: 0.3px; font-weight: 600;">Supports secure local and international payments, integrated with Visa, Mastercard, AMEX, and JCB cards.</p>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-2"><img src="../Assets/Payment/visa.png" class="img-fluid w-50" alt=""></div>
+                                <div class="col-2"><img src="../Assets/Payment/mastercard.png" class="img-fluid w-50" alt=""></div>
+                                <div class="col-2"><img src="../Assets/Payment/american-express.png" class="img-fluid w-50" alt=""></div>
+                                <div class="col-2"><img src="../Assets/Payment/jcb.png" class="img-fluid w-50" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 bg-white py-5 px-4">
+                        <div class="row">
+                            <div class="col-9">
+                                <p style="letter-spacing: 0.3px;">Transaction fee (2.9%):</p>
+                                <p style="letter-spacing: 0.3px;">VAT (11%):</p>
+                            </div>
+                            <div class="col-3 text-end">
+                                <p style="letter-spacing: 0.3px;" id="2.9">Rp 2,500</p>
+                                <p style="letter-spacing: 0.3px;" id="ppn0.11">Rp 275</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-9">
+                                <p style="letter-spacing: 0.3px;">Amount received:</p>
+                            </div>
+                            <div class="col-3 text-end">
+                                <p style="letter-spacing: 0.3px;" class="fw-bold">Rp 9,678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-0">
+
+                <div class="row">
+                    <div class="col-7 mt-4">
+                        <div class="mt-2">
+                            <h2 class="fw-bold">E-Wallet</h2>
+                            <p class="text-secondary" style="font-size: 16px; letter-spacing: 0.3px; font-weight: 600;">Integrated with major e-wallets in Indonesia for faster cashless payments.</p>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-2"><img src="../Assets/Payment/dana.png" class="img-fluid w-75" alt=""></div>
+                                <div class="col-2"><img src="../Assets/Payment/ovo.png" class="img-fluid w-75" alt=""></div>
+                                <div class="col-2"><img src="../Assets/Payment/gopay.png" class="img-fluid w-75" alt=""></div>
+                                <div class="col-2"><img src="../Assets/Payment/shopeepay.png" class="img-fluid w-75" alt=""></div>
+                                <div class="col-2"><img src="../Assets/Payment/link-aja.png" class="img-fluid w-75" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 bg-white py-4 px-4">
+                        <div class="row">
+                            <img src="../Assets/Payment/dana.png" class="img-fluid w-25 h-25" alt="">
+                            <p class="text-secondary mt-2" style="font-size: 16px;">Merchants selling non-digital products</p>
+                            <div class="col-9">
+                                <p style="letter-spacing: 0.3px;">Transaction fee (Rp2,500):</p>
+                                <p style="letter-spacing: 0.3px;">VAT (11%):</p>
+                            </div>
+                            <div class="col-3 text-end">
+                                <p style="letter-spacing: 0.3px;">Rp 2,500</p>
+                                <p style="letter-spacing: 0.3px;">Rp 275</p>
+                            </div>
+                        </div>
+                        <hr class="my-2">
+                        <div class="row">
+                            <div class="col-9">
+                                <p style="letter-spacing: 0.3px;">Amount received:</p>
+                            </div>
+                            <div class="col-3 text-end">
+                                <p style="letter-spacing: 0.3px;" class="fw-bold">Rp 9,678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-0">
+
+                <div class="row">
+                    <div class="col-7 mt-4">
+                        <div class="mt-2">
+                            <h2 class="fw-bold">QRIS</h2>
+                            <p class="text-secondary" style="font-size: 16px; letter-spacing: 0.3px; font-weight: 600;">Receive payments via QR codes that can be scanned using e-wallets or banks. Reach international customers with QRIS Cross-border!</p>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-1"><h4>ID</h4></div>
+                                <div class="col-1"><h4>MY</h4></div>
+                                <div class="col-1"><h4>SG</h4></div>
+                                <div class="col-1"><h4>TH</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 bg-white pt-5 pb-3 px-4">
+                        <div class="row">
+                            <div class="col-9">
+                                <p style="letter-spacing: 0.3px;">Transaction fee (Rp2,500):</p>
+                                <p style="letter-spacing: 0.3px;">VAT (11%):</p>
+                            </div>
+                            <div class="col-3 text-end">
+                                <p style="letter-spacing: 0.3px;">Rp 2,500</p>
+                                <p style="letter-spacing: 0.3px;">Rp 275</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-9">
+                                <p style="letter-spacing: 0.3px;">Amount received:</p>
+                            </div>
+                            <div class="col-3 text-end">
+                                <p style="letter-spacing: 0.3px;" class="fw-bold">Rp 9,678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="protection Desktop" style="margin-top: 2em; margin-right: 5rem; margin-left: 5rem;">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="mt-5">
+                        <h2 class="mt-4 mx-4 text-center" style="font-size: 55px; font-weight: 700; letter-spacing: 1px; line-height: 62.4px;">Security Protection</h2>
+                        <p class="mt-4 px-4 text-center" style="width: 100%; letter-spacing: 0.5px; font-size: 21px; font-weight: 500; line-height: 29.4px; color: #727272;">All transactions are protected with encryption and meet security standards, safeguarding your business and customers.</p>
+                    </div>
+                </div>
+                <div class="row bg-white rounded-5 mx-3 mt-5">
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <img src="../Assets/protection-gembok.png" class="img-fluid mt-5" alt="" style="width: 80px; height: 120px;">
+                        </div>
+                        <p style="font-size: 21px; font-weight: 700; line-height: 29.4px;" class="fw-bold text-center mt-4">Safe Transactions</p>
+                        <p class="text-center" style="font-size: 17px; font-weight: 500; line-height: 23.8px; color: #727272;">Protected by an advanced security system, making the entire payment process safe.</p>
+                    </div>
+                    <div class="col-auto d-flex justify-content-center my-5">
+                        <div style="width: 1px; height: 300px; background-color: #d1d1d1;"></div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <img src="../Assets/protection-pci.png" class="img-fluid mt-5" alt="" style="width: 110px; height: 90px;">
+                        </div>
+                        <p style="font-size: 21px; font-weight: 700; line-height: 29.4px;" class="fw-bold text-center mt-5">PCI-DSS Standard</p>
+                        <p class="text-center" style="font-size: 17px; font-weight: 500; line-height: 23.8px; color: #727272;">Protects payment information with industry-standard card security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="protection Mobile mx-4" style="margin-top: 2em;">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <div class="mt-5">
+                        <h1 class="mt-4 mx-4 text-center" style="font-size: 2rem; font-weight: 700; letter-spacing: 1px;">Security Protection</h1>
+                        <p class="mt-4 px-4 text-center" style="width: 100%; letter-spacing: 0.5px; font-size: 1rem; font-weight: 500; color: #727272;">All transactions are protected with encryption and meet security standards, safeguarding your business and customers.</p>
+                    </div>
+                </div>
+                <div class="row bg-white rounded-5 mx-3 mt-5">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <img src="../Assets/protection-gembok.png" class="img-fluid mt-5" alt="" style="width: 80px; height: 120px;">
+                        </div>
+                        <p style="font-size: 21px; font-weight: 700; line-height: 29.4px;" class="fw-bold text-center mt-4">Safe Transactions</p>
+                        <p class="text-center" style="font-size: 17px; font-weight: 500; line-height: 23.8px; color: #727272;">Protected by an advanced security system, making the entire payment process safe.</p>
+                    </div>
+                    <hr class="mt-4 mb-0 opacity-25">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <img src="../Assets/protection-pci.png" class="img-fluid mt-5" alt="" style="width: 110px; height: 90px;">
+                        </div>
+                        <p style="font-size: 21px; font-weight: 700; line-height: 29.4px;" class="fw-bold text-center mt-5">PCI-DSS Standard</p>
+                        <p class="text-center" style="font-size: 17px; font-weight: 500; line-height: 23.8px; color: #727272;">Protects payment information with industry-standard card security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" style="margin-top: 5rem; margin-right: 3rem; margin-left: 3rem; margin-bottom: 5rem;">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">What is Gapura?</button>
+                <div class="faq-answer">
+                    <p>Gapura is a technology-based financial service solution from Indonesia offering Payment Gateway services, connected to banks, e-wallets, and more, serving SMEs up to large enterprises with customizable integration solutions.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What fees are charged?</button>
+                <div class="faq-answer">
+                    <p>Setup is free and we only charge fees for successful transactions. There are no implementation or maintenance fees. Check detailed pricing <a href="" class="text-decoration-none">here</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I start receiving payments with Gapura?</button>
+                <div class="faq-answer">
+                    <p>Register your account <a href="" class="text-decoration-none">here</a> and follow the next instructions.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What types of businesses are suitable for Gapura?</button>
+                <div class="faq-answer">
+                    <p>Gapura is suitable for businesses of all sizes, from micro to large enterprises, including:
+                        <ul>
+                            <li>E-commerce businesses: Offers multiple payment methods including credit, debit, e-wallet, and paylater.</li>
+                            <li>Retail businesses: Provides in-store payment solutions tailored for retail, including POS systems, practical online payments, and secure contactless payments.</li>
+                            <li>SaaS businesses: Supports recurring payments, subscriptions, and in-app payments.</li>
+                            <li>Platforms and marketplaces: Offers suitable payment methods including in-app payments and cross-border transactions supporting multiple currencies.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="end desktop bg-blue">
+            <div class="container">
+                <div class="mt-5 pt-5 d-flex justify-content-center">
+                    <div>
+                        <h4 class="mt-4 mx-4 text-white text-center" style="font-size: 45px; font-weight: 700; letter-spacing: 1px; line-height: 62.4px;">Start growing your business with DANA Enterprise</h4>
+                        <div class="actions d-flex align-items-center gap-3 justify-content-center mt-4">
+                            <button class="btn-sign btn-yellow bg-white border border-white border-2 text-blue d-flex align-items-center">
+                                <div>Register for FREE</div>
+                                <i class="bi bi-arrow-right mt-1"></i>
+                            </button>
+                            <button class="btn btn-yellow btn-outline-light border-2 bg-blue d-flex" style="border-radius: 40px;">
+                                <div class="fw-bold">Contact Us</div>
+                                <i class="ms-2 bi bi-arrow-right" style="margin-top: 0.4rem;"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <img src="../Assets/Enterprise.png" class="img-fluid" style="width: 85%;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="end mobile bg-blue">
+            <div class="container">
+                <div class="mt-5 pt-5 d-flex justify-content-center">
+                    <div>
+                        <h4 class="mt-4 mx-4 text-white text-center" style="font-size: 2rem; font-weight: 700; letter-spacing: 1px;">Start growing your business with DANA Enterprise</h4>
+                        <div class="actions mt-4">
+                            <button class="mt-3 btn-sign btn-yellow bg-white border border-white border-2 justify-content-center text-blue d-flex align-items-center" style="width: 100%;">
+                                <div>Register for FREE</div>
+                                <i class="bi bi-arrow-right mt-1"></i>
+                            </button>
+                            <button class="mt-3 btn btn-yellow btn-outline-light border-2 bg-blue d-flex justify-content-center" style="border-radius: 40px; width: 100%;">
+                                <div class="fw-bold">Contact Us</div>
+                                <i class="ms-2 bi bi-arrow-right" style="margin-top: 0.4rem;"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <img src="../Assets/Enterprise.png" class="img-fluid" style="width: 85%;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-blue px-4">
+            <div class="container px-5">
+                <div class="footer-body">
+                    <div class="to-top clearfix">
+                        <a href="#">
+                            <button class="btn btn-pink fw-bold text-white fs-5 rounded-5 px-3 to-top-button">Back to Top<i class="bi bi-arrow-up ms-1"></i></button>
+                        </a>
+                    </div>
+                    <div class="main-footer mt-5">
+                        <div class="row">
+                            <div class="col-6 col-md">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Payment Solutions</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Payment Gateway</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Payment API</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Point of Sales</a></li>
+                                    <li style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Business</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Disbursement</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Disbursement</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Enterprise Wallet</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md mt-5 mt-md-0">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Promotions</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">DANA Deals</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Loyalty</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md mt-5 mt-md-0">
+                                <h5 class="fw-bold border-white text-white d-inline-block border-4 pb-1 border-bottom">Others</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Games</a></li>
+                                    <li class="mb-2" style="font-size: 1.2rem;"><a href="" class="text-decoration-none text-white">Promos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-white footer-border mt-5"></div>
+                        <div class="Desktop">
+                            <div class="row d-flex align-items-center justify-content-center g-0">
+                                <div class="col-3 mt-2">
+                                    <p class="fs-5 text-white">Download the DANA App</p>
+                                </div>
+                                <div class="col-2">
+                                    <a href="https://play.google.com/store/apps/details?id=id.dana&hl=id" target="_blank"><img src="../Assets/PlayStore.svg" class="img-fluid" alt="Google Play Store"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://apps.apple.com/id/app/dana-dompet-digital-indonesia/id1437123008" target="_blank"><img src="../Assets/AppStore.svg" class="img-fluid" alt="Apple App Store"></a>
+                                </div>
+                            </div>
+                            <div class="row mt-2 py-5 d-flex align-items-center justify-content-center g-0">
+                                <div class="col-6 mt-3">
+                                    <p class="text-white fs-5" style="letter-spacing: 0.3px;">DANA Indonesia is registered and supervised by</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="../Assets/BILogo.svg" class="img-fluid" alt="Bank Indonesia Logo">
+                                </div>
+                                <div class="col">
+                                    <img src="../Assets/KomdigiLogo.svg" class="img-fluid" style="width: 20%;" alt="Kominfo Digital Logo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Mobile">
+                            <div class="mt-2">
+                                <p class="fs-5 text-white">Download the DANA App</p>
+                            </div>
+                            <div>
+                                <a href="https://play.google.com/store/apps/details?id=id.dana&hl=id" target="_blank"><img src="../Assets/PlayStore.svg" class="img-fluid" alt="Google Play Store"></a>
+                            </div>
+                            <div class="mt-3">
+                                <a href="https://apps.apple.com/id/app/dana-dompet-digital-indonesia/id1437123008" target="_blank"><img src="../Assets/AppStore.svg" class="img-fluid" alt="Apple App Store"></a>
+                            </div>
+                            <div class="mt-2 py-5">
+                                <p class="text-white fs-5" style="letter-spacing: 0.3px;">DANA Indonesia is registered and supervised by</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="../Assets/BILogo.svg" class="img-fluid" alt="Bank Indonesia Logo">
+                                    </div>
+                                    <div class="col">
+                                        <img src="../Assets/KomdigiLogo.svg" class="img-fluid" style="width: 40%;" alt="Kominfo Digital Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="bg-darkblue Desktop px-4">
+            <div class="container px-5 mx-5">
+                <div class="footer-bottom pt-5">
+                    <div class="d-flex align-items-center justify-content-start gap-3 pb-3">
+                        <img src="../Assets/DanaLogo.png" class="img-fluid" style="width: 12%;" alt="DANA Logo">
+                        <p class="text-white mt-3 ms-3">&copy; 2024 DANA - PT. Espay Debit Indonesia Koe. All Rights Reserved.</p>
+                        <div style="margin-left: 8rem;">
+                            <a href="https://www.facebook.com/danawallet/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/facebook-logo.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/dana.id/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/instagram-logo.svg" alt="Instagram"></a>
+                            <a href="https://twitter.com/danawallet" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/twitter-logo.svg" alt="Twitter"></a>
+                            <a href="https://www.youtube.com/channel/UC5SXW8337jcLG0Xp3lHbphw" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/youtube-logo.svg" alt="YouTube"></a>
+                            <a href="https://www.linkedin.com/company/dana-indonesia" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/linkedin-logo.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="bg-darkblue Mobile px-4">
+            <div class="container">
+                <div class="footer-bottom mx-3 pt-5">
+                    <img src="../Assets/DanaLogo.png" class="img-fluid" style="width: 25%;" alt="DANA Logo">
+                    <p class="text-white mt-3">&copy; 2024 DANA - PT. Espay Debit Indonesia Koe. All Rights Reserved.</p>
+                    <div style="margin-left: -1rem;">
+                        <a href="https://www.facebook.com/danawallet/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/facebook-logo.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/dana.id/" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/instagram-logo.svg" alt="Instagram"></a>
+                        <a href="https://twitter.com/danawallet" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/twitter-logo.svg" alt="Twitter"></a>
+                        <a href="https://www.youtube.com/channel/UC5SXW8337jcLG0Xp3lHbphw" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/youtube-logo.svg" alt="YouTube"></a>
+                        <a href="https://www.linkedin.com/company/dana-indonesia" target="_blank" rel="noreferrer"><img class="social-media-logo ms-3" src="https://a.m.dana.id/danaweb/v3/linkedin-logo.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const popup = document.getElementById('popupPage');
+            const openBtn = document.getElementById('openPopup');
+            const modal = new bootstrap.Modal(popup);
+
+            openBtn.addEventListener('click', () => modal.show());
+
+            popup.addEventListener('click', function (e) {
+                if (!e.target.closest('.modal-dialog')) {
+                modal.hide();
+                }
+            });
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="calculator.js"></script>
+    </body>
+</html>

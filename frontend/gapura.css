@@ -1,0 +1,705 @@
+/* ======================= BACKGROUND ======================= */
+
+.bg-blue {
+  background-color: #108ee9 !important;
+}
+
+.bg-lightblue {
+    background-color: #18c1ff !important;
+}
+
+.bg-darkblue {
+  background-color: #084a7a !important;
+}
+
+/* ======================= FONT COLOR ======================= */
+
+.text-ligthblue {
+  color: #18c1ff !important;
+}
+
+.text-blue {
+  color: #108ee9 !important;
+}
+
+.btn-outline-blue {
+  border: 2px solid #108ee9 !important;
+}
+
+
+/* ======================= BUTTON ======================= */
+
+.btn-pink {
+  background-color: #ff64ae !important;
+}
+
+.btn-yellow:hover {
+  background-color: #ffcc3b !important;
+  border: 2px solid #ffcc3b !important;
+  color: black !important;
+} 
+
+.btn-language {
+  border: 2px solid white !important;
+  background-color: transparent !important;
+  color: white !important;
+}
+
+/* ======================= GENERAL ======================= */
+
+body {
+  background-color: #f5f5f5 !important;
+}
+
+
+/* ======================= HEADER ======================= */
+
+nav {
+  position: relative;
+  top: 7px;
+}
+
+.btn-daftar {
+  border: 2px solid #18c1ff !important;
+  color: black !important;
+} 
+
+.nav-item {
+  position: relative;
+  padding-bottom: 10px;        
+}
+
+.dropdown {
+  position: relative;
+  top: 75%; 
+  left: -70;
+  background-color: #0f479d !important;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 30px 100px 30px 20px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  z-index: 9999;
+  pointer-events: auto; 
+  margin-top: 10px;
+}
+
+header {
+  position: relative; 
+  z-index: 10;
+  background-color: #0f479d !important;
+}
+
+.nav-item:hover .dropdown {
+  display: flex;
+  position: absolute;
+}
+
+main, section, .container, .hero, .content {
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown a:hover {
+  color: #cecece !important;
+}
+
+.btn-language:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: inherit !important;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.drawer-tab.active {
+  color: #007bff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+}
+
+@media (max-width: 991px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    color: #108ee9;
+    transition: 0.3s ease;
+    flex-direction: column;
+    padding: 2rem;
+    z-index: 999;
+  }
+
+  .main-nav.active {
+    right: 0;
+  }
+
+  .main-nav a {
+    color: #108ee9 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .hamburger.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .me-5 {
+    display: none !important;
+  }
+
+  .nav-item:hover .dropdown {
+    position: relative;
+    display: flex;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #0f479d !important;
+  z-index: 9999;
+  transform: translateY(-100%); 
+  transition: transform 0.5s ease;
+  overflow-y: auto;
+}
+
+.mobile-drawer.open {
+  right: 0;
+  transform: translateY(0);
+}
+
+.drawer-header img {
+  width: 45px;
+}
+
+.drawer-tabs {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.drawer-tab {
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.drawer-tab.active {
+  background: #eaf5ff;
+  color: #108ee9 !important;
+}
+
+.text-lightblue {
+  color: #108ee9;
+}
+
+.blue-line {
+  height: 3px;
+  width: 25%;
+  background: #108ee9;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.accordion .accordion-item {
+  margin-top: 20px;
+  border: none;
+  background-color: #0f479d !important;
+}
+
+.accordion-btn {
+  all: unset;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.accordion-content {
+  display: none;
+  margin-top: 10px;
+  
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+.acc-link {
+  display: block;
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.drawer-footer {
+  background: #f7f7f7;
+}
+
+.btn-lang {
+  background: rgb(249, 249, 249);
+  border: 2px solid #108ee9 !important;
+  border-radius: 30px !important;
+}
+
+.btn-lang:hover {
+  background: rgb(249, 249, 249);
+  border: 2px solid #108ee9 !important;
+  border-radius: 30px !important;
+}
+
+.drawer-content {
+  display: none;
+}
+
+.drawer-content.show {
+  display: block;
+}
+
+.drawer-scroll-area {
+  height: calc(100vh - 150px);  
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+.drawer-footer {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+/* ======================= HERO ======================= */
+
+.hero {
+  position: relative;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 948px;
+  height: 672px;
+  background-image: url(https://a.m.dana.id/resource/danaweb-v2/gapura/landing/hero-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 24px 0 0 24px;
+}
+
+.hero .wrapper {
+  position: relative;
+  width: 100%;
+  height: 672px;
+  max-width: 1080px;
+  z-index: 1;
+}
+
+.hero .container {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 620px;
+  padding: 20px 32px 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  border-radius: 24px;
+}
+
+.btn-gapura {
+  height: 60px;
+  padding: 13px 33px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 54px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: #fff !important;
+  border: 2px solid #18c1ff !important;
+}
+
+.sec-btn {
+  height: 60px;
+  padding: 20px 17px;
+  display: flex;
+  align-items: center;
+  border-radius: 59px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.2px;
+  text-align: center;
+  border: 2px solid #e3e3e3 !important;
+  color: #313131;
+  background-color: #fff !important;
+}
+
+.HeroMobile {
+  display: none !important;
+}
+
+@media (max-width: 981px) {
+  .HeroDesktop {
+    display: none !important;
+  }
+
+  .HeroMobile {
+    display: block !important;
+  }
+
+  .hero .background {
+    border-radius: 0px;
+  }
+}
+
+
+/* ======================= MAIN ======================= */
+
+.main-mobile {
+  display: none !important;
+}
+
+@media (max-width: 981px) {
+  .main-desktop {
+    display: none !important;
+  }
+
+  .main-mobile {
+    display: block !important;
+  }
+}
+
+.btn-calc {
+  height: 44px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.4px;
+  background-color: #18c1ff;
+  border: 2px solid #18c1ff !important;
+  color: #fff;
+}
+
+.btn-docs {
+  height: 44px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.4px;
+  border: 2px solid #118ee9;
+  color: #118ee9;
+}
+
+/* ======================= PAYMENT ======================= */
+
+.payment .content {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+
+.content .tab-payment {
+  width: fit-content;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 40px;
+  border: 1px solid #e3e3e3;
+}
+
+.tab-payment .tab {
+  padding: 8px 16px;
+  border-radius: 80px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: .005em;
+  text-align: left;
+}
+
+.tab-payment .tab.active {
+  background-color: #ffcc3b;
+  color: #0f479d;
+}
+
+.content .info-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content .info-wrapper .info {
+  scroll-snap-align: start;
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+
+.content .info-wrapper .info .info-header .info-title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 37.8px;
+}
+
+
+.content .info-wrapper .info .info-header .info-desc {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23.8px;
+  color: #727272;
+}
+
+.content .info-wrapper .info .info-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.content .info-wrapper .info .info-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: fit-content;
+}
+
+.content .info-wrapper .info .info-tab-wrapper {
+  display: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 40px;
+  border: 1px solid #e3e3e3;
+}
+
+.content .info-wrapper .info .info-tab-wrapper .info-tab {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 80px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: .005em;
+  text-align: center;
+  background-color: #ffcc3b;
+  color: #0f479d;
+}
+
+.payment-mobile {
+  display: none !important;
+}
+
+.solution-mobile {
+  display: none !important;
+}
+
+.mobile {
+  display: none !important;
+}
+
+
+@media (max-width: 981px) {
+  .payment-desktop {
+    display: none !important;
+  }
+
+  .payment-mobile {
+    display: block !important;
+  }
+  
+  .solution-desktop {
+    display: none !important;
+  }
+
+  .solution-mobile {
+    display: block !important;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+}
+
+
+/* ======================= FAQ ======================= */
+
+.faq {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.faq h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.faq-question {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 29.4px;
+  color: #313131;
+  width: 100%;
+  text-align: left;
+  padding: 15px 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question::after {
+  background-image: url(https://a.m.dana.id/resource/danaweb-v2/sub-menu-up-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 24px;
+  pointer-events: none;
+  width: 24px;
+  transition: transform .3s ease-in-out;
+}
+
+.faq-question.active::after {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23.8px;
+  color: #313131;
+}
+
+.faq-answer p {
+  padding: 0 0 15px;
+  color: #555;
+}
+
+.faq-answer.show {
+  max-height: 200px; 
+}
+
+
+/* ======================= FOOTER ======================= */
+
+.to-top-button {
+  float: right;
+  margin-top: -1.2rem;
+}
+
+.footer-border {
+  background-color: #fff;
+  height: 1px;
+  width: 95%;
+  margin: 48px 0;
+}
+
+.btn-sign {
+  height: 44px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.4px;
+  background-color: #18c1ff;
+  border: none;
+  color: #fff;
+}
+
+.main-footer li a:hover {
+  color: rgb(229, 229, 229) !important;
+}
